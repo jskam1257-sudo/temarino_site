@@ -12249,11 +12249,6 @@ th {
     line-break: strict !important;
   }
 
-  .homecare-page-body .tm-hero-copy .hero-text-line {
-    display: block !important;
-    white-space: nowrap !important;
-  }
-
   .homecare-page-body .tm-hero-copy .text-phrase {
     display: inline !important;
   }
@@ -12267,64 +12262,129 @@ th {
   }
 }
 
-/* Mobile intentional copy lines across all pages */
+/* Mobile text safety across all pages */
 @media (max-width: 767px) {
+  body {
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    line-break: strict !important;
+  }
+
   main :where(p, li, dd, summary),
   footer :where(p, li) {
-    max-width: min(100%, 24em) !important;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    line-height: 2.05 !important;
-    letter-spacing: 0.035em !important;
+    box-sizing: border-box !important;
+    max-width: min(100%, 31em) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    line-height: 2 !important;
+    letter-spacing: 0.025em !important;
     word-break: normal !important;
-    overflow-wrap: normal !important;
+    overflow-wrap: break-word !important;
     line-break: strict !important;
   }
 
   main :where(h1, h2, h3, .section-title),
   footer :where(h2, h3) {
-    max-width: min(100%, 13em) !important;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    line-height: 1.75 !important;
-    letter-spacing: 0.05em !important;
-    word-break: normal !important;
-    overflow-wrap: normal !important;
-    line-break: strict !important;
-  }
-
-  .mobile-intended-copy {
+    box-sizing: border-box !important;
+    max-width: min(100%, 16em) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     text-align: center !important;
+    line-height: 1.72 !important;
+    letter-spacing: 0.035em !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    line-break: strict !important;
+    text-wrap: balance;
   }
 
-  .mobile-intended-line {
-    display: block !important;
-    width: max-content;
-    max-width: 100%;
-    margin-inline: auto;
-    white-space: nowrap;
+  main :where(
+    .text-phrase,
+    .hero-text-line,
+    .mobile-intended-line,
+    .hero__title span,
+    .footer-hours-title span,
+    .tm-badge
+  ) {
+    display: inline !important;
+    white-space: normal !important;
+  }
+
+  .homecare-page-body .tm-hero-copy .hero-text-line,
+  .homecare-page-body .tm-hero-copy .text-phrase {
+    display: inline !important;
+    white-space: normal !important;
+  }
+
+  main :where(
+    .tm-page,
+    .tm-page-inner,
+    .tm-note,
+    .tm-list-card,
+    .tm-info-row div,
+    .watercolor-card,
+    .midwife-service-guide__item,
+    .postnatal-flow__card,
+    .postpartum-application-flow__card,
+    .contact-guide-card,
+    .about-card,
+    .voice-card,
+    .magazine-card__body,
+    .reason-card
+  ) {
+    min-width: 0 !important;
+    overflow-wrap: break-word !important;
+  }
+
+  main :where(
+    .tm-page *,
+    .tm-note *,
+    .tm-list-card *,
+    .tm-info-row div *,
+    .watercolor-card *,
+    .midwife-service-guide__item *,
+    .postnatal-flow__card *,
+    .postpartum-application-flow__card *,
+    .contact-guide-card *,
+    .about-card *,
+    .voice-card *,
+    .magazine-card__body *,
+    .reason-card *
+  ) {
+    max-width: 100% !important;
+    min-width: 0 !important;
   }
 
   main :where(.about-label, .contact-label, .tm-eyebrow, .tm-page-kicker, .magazine-card__number) {
+    width: auto !important;
     max-width: 100% !important;
-    line-height: 1.6 !important;
-    letter-spacing: 0.12em !important;
+    line-height: 1.55 !important;
+    letter-spacing: 0.1em !important;
+    overflow-wrap: break-word !important;
   }
 }
 
 @media (max-width: 390px) {
   main :where(p, li, dd, summary),
   footer :where(p, li) {
-    max-width: min(100%, 22em) !important;
-    font-size: min(15px, 3.85vw) !important;
-    letter-spacing: 0.025em !important;
+    max-width: min(100%, 29em) !important;
+    font-size: min(15px, 3.9vw) !important;
+    line-height: 2.05 !important;
+    letter-spacing: 0.015em !important;
   }
 
   main :where(h1, h2, h3, .section-title),
   footer :where(h2, h3) {
-    max-width: min(100%, 11.5em) !important;
-    letter-spacing: 0.04em !important;
+    max-width: min(100%, 14em) !important;
+    letter-spacing: 0.025em !important;
+  }
+}
+
+@media (max-width: 360px) {
+  main :where(p, li, dd, summary),
+  footer :where(p, li) {
+    font-size: min(14px, 3.85vw) !important;
+    letter-spacing: 0.01em !important;
   }
 }
