@@ -11986,3 +11986,252 @@ th {
     padding-inline: 18px;
   }
 }
+
+/* Responsive stability fixes 2026-07-04 */
+.intro-copy {
+  font-family: "Kiwi Maru", var(--serif), serif !important;
+}
+
+@media (max-width: 767px) {
+  .header__inner {
+    width: min(100% - 28px, 720px) !important;
+    height: 76px !important;
+    justify-content: space-between !important;
+  }
+
+  .logo {
+    min-width: 0 !important;
+    gap: 8px !important;
+    margin-left: 0 !important;
+  }
+
+  .logo img {
+    width: clamp(56px, 17vw, 72px) !important;
+    max-height: 56px !important;
+  }
+
+  .logo__name {
+    font-size: clamp(20px, 7.2vw, 30px) !important;
+    letter-spacing: 0.08em !important;
+    white-space: nowrap !important;
+  }
+
+  .menu-btn {
+    display: block !important;
+    flex: 0 0 42px !important;
+  }
+
+  .nav {
+    top: 76px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1099px) {
+  .header__inner {
+    width: min(100% - 40px, 980px) !important;
+    height: 82px !important;
+    justify-content: space-between !important;
+  }
+
+  .logo {
+    gap: 10px !important;
+    margin-left: 0 !important;
+  }
+
+  .logo img {
+    width: clamp(72px, 9vw, 92px) !important;
+    max-height: 64px !important;
+  }
+
+  .logo__name {
+    font-size: clamp(24px, 3.8vw, 34px) !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  .menu-btn {
+    display: block !important;
+    flex: 0 0 42px !important;
+  }
+
+  .nav {
+    position: fixed !important;
+    top: 82px !important;
+    left: 24px !important;
+    right: 24px !important;
+    display: none !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+    margin-left: 0 !important;
+    padding: 24px !important;
+    border-radius: 24px !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: var(--shadow) !important;
+  }
+
+  .menu-check:checked ~ .nav {
+    display: grid !important;
+  }
+
+  .nav a {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1280px) {
+  .header__inner {
+    width: min(100% - 32px, 1220px) !important;
+  }
+
+  .logo {
+    gap: 10px !important;
+    margin-left: 0 !important;
+  }
+
+  .logo img {
+    width: 96px !important;
+    max-height: 66px !important;
+  }
+
+  .logo__name {
+    font-size: clamp(24px, 2.2vw, 30px) !important;
+    letter-spacing: 0.06em !important;
+  }
+
+  .nav {
+    gap: clamp(12px, 1.5vw, 22px) !important;
+  }
+
+  .nav a {
+    font-size: clamp(13px, 1.1vw, 15px) !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .nav .btn--small {
+    min-height: 44px !important;
+    padding-inline: 22px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .index-page-body .watercolor-guide {
+    overflow: hidden !important;
+  }
+
+  .index-page-body .watercolor-guide__inner {
+    width: min(100%, 390px) !important;
+    margin-inline: auto !important;
+  }
+
+  .index-page-body .watercolor-guide__small,
+  .index-page-body .watercolor-guide .section-title,
+  .index-page-body .midwife-service-guide__title {
+    max-width: calc(100vw - 48px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    line-break: strict !important;
+    text-align: center !important;
+  }
+
+  .index-page-body .watercolor-guide__small {
+    font-size: clamp(15px, 4.3vw, 18px) !important;
+    line-height: 1.75 !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  .index-page-body .watercolor-guide .section-title {
+    font-size: clamp(23px, 6vw, 28px) !important;
+    line-height: 1.75 !important;
+    letter-spacing: 0.06em !important;
+  }
+
+  .index-page-body .watercolor-card,
+  .index-page-body .midwife-service-guide__item {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .index-page-body .watercolor-guide__inner,
+  .index-page-body .midwife-service-guide__inner {
+    width: min(100%, 340px) !important;
+  }
+
+  .index-page-body .watercolor-guide .section-title {
+    max-width: 11.5em !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .temari-flower-footer__inner {
+    padding-top: 96px !important;
+  }
+
+  .footer-brand {
+    display: grid !important;
+    justify-items: center !important;
+    align-content: center !important;
+    min-height: 170px !important;
+  }
+
+  .footer-brand img {
+    width: 58px !important;
+    margin: 0 auto 10px !important;
+  }
+
+  .footer-brand h2 {
+    margin: 0 !important;
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .temari-flower-footer__inner {
+    padding-top: 118px !important;
+  }
+
+  .footer-brand {
+    display: grid !important;
+    justify-items: center !important;
+    align-content: center !important;
+    min-height: 150px !important;
+  }
+}
+
+.homecare-page-body .tm-hero-image {
+  display: block !important;
+}
+
+.homecare-page-body .tm-hero-image img {
+  display: block !important;
+  width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  object-position: 50% 50% !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+@media (max-width: 900px) {
+  .homecare-page-body .tm-service-hero {
+    gap: 36px !important;
+  }
+
+  .homecare-page-body .tm-hero-image {
+    width: min(78vw, 360px) !important;
+    max-width: calc(100vw - 72px) !important;
+    margin: 36px auto 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .homecare-page-body .tm-hero-image {
+    width: min(74vw, 300px) !important;
+    max-width: calc(100vw - 88px) !important;
+    margin-top: 30px !important;
+  }
+}
