@@ -1865,7 +1865,7 @@ a {
 }
 .intro-copy {
   margin-top: 42px;
-  color: var(--text);
+  color: #df7f8b;
   font-family: var(--serif);
   font-size: clamp(24px, 2vw, 42px);
   line-height: 1.9;
