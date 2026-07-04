@@ -13079,3 +13079,46 @@ th {
     margin-right: auto !important;
   }
 }
+
+/* Cross-device polish requested 2026-07-05 */
+:root {
+  --temari-title-pink: #df8f8f;
+}
+
+.logo__name,
+.intro-copy,
+.footer-brand h2 {
+  color: var(--temari-title-pink) !important;
+}
+
+.voice-page-body .voice-card p {
+  font-weight: 400 !important;
+}
+
+.postpartum-care-page-body .tm-hero-copy h1,
+.babysitter-page-body .tm-hero-copy h1,
+.homecare-page-body .tm-hero-copy h1 {
+  font-size: clamp(38px, 4.8vw, 66px) !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+}
+
+@media (max-width: 767px) {
+  .contact-page-body .contact-intro__box .reservation-highlight-block {
+    display: inline-flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    background: none !important;
+  }
+
+  .contact-page-body .contact-intro__box .line-message-row {
+    display: inline !important;
+    width: fit-content !important;
+    padding: 0 0.25em 2px !important;
+    background: linear-gradient(transparent 58%, rgba(244, 195, 187, 0.72) 58%) !important;
+    box-decoration-break: clone !important;
+    -webkit-box-decoration-break: clone !important;
+  }
+}
