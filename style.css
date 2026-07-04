@@ -12668,3 +12668,54 @@ th {
     text-align: left !important;
   }
 }
+
+/* Smartphone text flow refinements requested 2026-07-04 */
+@media (max-width: 767px) {
+  .postpartum-care-page-body .postpartum-round-flow__line-note,
+  .postpartum-care-page-body .postpartum-round-flow__line-note p,
+  .postpartum-care-page-body .postpartum-round-flow__line-note span,
+  .postpartum-care-page-body .postpartum-round-flow__payment,
+  .postpartum-care-page-body .postpartum-round-flow__payment span,
+  .babysitter-page-body .first-guide__intro,
+  .babysitter-page-body .first-guide__intro p,
+  .babysitter-page-body .first-guide__intro span {
+    text-align: left !important;
+  }
+
+  .postpartum-care-page-body .postpartum-round-flow__line-note p,
+  .postpartum-care-page-body .postpartum-round-flow__payment,
+  .babysitter-page-body .first-guide__intro p {
+    max-width: min(100%, 30em) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .index-page-body .contact-intro__box .reservation-highlight-block,
+  .contact-page-body .contact-intro__box .reservation-highlight-block {
+    display: inline-block !important;
+  }
+
+  .postpartum-care-page-body .dot-frame-message .sp-only,
+  .babysitter-page-body .dot-frame-message .sp-only,
+  .homecare-page-body .dot-frame-message .sp-only,
+  .index-page-body .contact-intro__box .sp-only,
+  .contact-page-body .contact-intro__box .sp-only,
+  .about-page-body .about-greeting__text .sp-only,
+  .about-page-body .about-family__text .sp-only,
+  .about-page-body .about-cta__box .sp-only,
+  .homecare-page-body .tm-hero-copy .sp-only,
+  .faq-page-body .tm-hero-copy .sp-only {
+    display: block !important;
+  }
+
+  .homecare-page-body .tm-hero-copy .hero-text-line {
+    display: inline !important;
+  }
+
+  .about-page-body .about-cta__box p,
+  .about-page-body .about-family__text p,
+  .homecare-page-body .tm-hero-copy p:last-child,
+  .faq-page-body .tm-hero-copy p:last-child {
+    text-align: center !important;
+  }
+}
