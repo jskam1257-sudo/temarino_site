@@ -1,0 +1,1115 @@
+﻿<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>産後ケア | てまりの助産院</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="asset/favicon.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="asset/favicon.png" />
+
+    <meta
+      name="description"
+      content="川崎市中原区・高津区、横浜市港北区（日吉・綱島）エリアの訪問型産後ケア・助産師ベビーシッター。武蔵小杉・元住吉・武蔵新城在住のママのご自宅に伺います。川崎市産後ケア委託事業対応。"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Klee+One&family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      .postpartum-care-page-body .postpartum-application-flow {
+        position: relative;
+        overflow: hidden;
+        padding: clamp(54px, 8vw, 96px) clamp(14px, 4vw, 34px)
+          clamp(58px, 8vw, 94px);
+        background:
+          radial-gradient(
+            circle at 9% 10%,
+            rgba(255, 226, 224, 0.6),
+            transparent 28rem
+          ),
+          radial-gradient(
+            circle at 92% 22%,
+            rgba(226, 241, 219, 0.5),
+            transparent 24rem
+          ),
+          linear-gradient(180deg, #fffafa 0%, #fffefc 56%, #fff8f8 100%);
+      }
+
+      .postpartum-care-page-body .postpartum-application-flow__inner {
+        position: relative;
+        width: min(100%, 1160px);
+        margin: 0 auto;
+        padding: 18px 14px 16px;
+        border: 1px solid rgba(233, 111, 118, 0.2);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 16px 42px rgba(121, 80, 72, 0.11);
+      }
+
+      .postpartum-care-page-body .postpartum-application-flow__inner::before,
+      .postpartum-care-page-body .postpartum-application-flow__inner::after {
+        position: absolute;
+        z-index: 0;
+        width: 118px;
+        height: 118px;
+        border-radius: 999px;
+        background:
+          radial-gradient(
+            circle at 50% 18%,
+            rgba(233, 111, 118, 0.22) 0 7px,
+            transparent 8px
+          ),
+          radial-gradient(
+            circle at 50% 82%,
+            rgba(233, 111, 118, 0.18) 0 7px,
+            transparent 8px
+          ),
+          radial-gradient(
+            circle at 18% 50%,
+            rgba(233, 111, 118, 0.18) 0 7px,
+            transparent 8px
+          ),
+          radial-gradient(
+            circle at 82% 50%,
+            rgba(233, 111, 118, 0.18) 0 7px,
+            transparent 8px
+          );
+        content: "";
+        opacity: 0.8;
+        pointer-events: none;
+      }
+
+      .postpartum-care-page-body .postpartum-application-flow__inner::before {
+        right: -46px;
+        bottom: 48px;
+      }
+
+      .postpartum-care-page-body .postpartum-application-flow__inner::after {
+        left: -64px;
+        bottom: -42px;
+        transform: rotate(-26deg);
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__heading,
+      .postpartum-care-page-body .postpartum-round-flow__steps,
+      .postpartum-care-page-body .postpartum-round-flow__line-note,
+      .postpartum-care-page-body .postpartum-round-flow__payment {
+        position: relative;
+        z-index: 1;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__heading {
+        display: grid;
+        gap: 12px;
+        align-items: center;
+        margin: 0 0 18px;
+        text-align: center;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__label {
+        justify-self: start;
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        margin: 0;
+        padding: 7px 13px;
+        border-radius: 8px;
+        color: #b94149;
+        font-size: clamp(1.04rem, 4vw, 1.55rem);
+        font-weight: 800;
+        line-height: 1.35;
+        background: #fff0f0;
+        white-space: nowrap;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__lead {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0 0.18em;
+        margin: 0;
+        color: #5f5855;
+        font-size: clamp(1.04rem, 4.7vw, 1.55rem);
+        font-weight: 800;
+        line-height: 1.6;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__lead-line {
+        display: inline-block;
+        white-space: nowrap;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__sprig {
+        position: relative;
+        display: inline-block;
+        width: 22px;
+        height: 18px;
+        flex: 0 0 auto;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__sprig::before,
+      .postpartum-care-page-body .postpartum-round-flow__sprig::after {
+        position: absolute;
+        top: 7px;
+        left: 8px;
+        width: 12px;
+        height: 6px;
+        border-radius: 999px 999px 999px 0;
+        background: #c8b879;
+        content: "";
+        transform: rotate(-34deg);
+        transform-origin: left center;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__sprig::after {
+        top: 3px;
+        left: 4px;
+        width: 10px;
+        height: 5px;
+        opacity: 0.7;
+        transform: rotate(36deg);
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__steps {
+        display: grid;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__step {
+        position: relative;
+        display: grid;
+        grid-template-columns: 92px minmax(0, 1fr);
+        gap: 14px;
+        align-items: center;
+        min-width: 0;
+        padding: 14px;
+        border: 1px solid rgba(233, 111, 118, 0.16);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 8px 24px rgba(121, 80, 72, 0.08);
+      }
+
+      .postpartum-care-page-body
+        .postpartum-round-flow__step:not(:last-child)::after {
+        position: absolute;
+        left: 59px;
+        top: calc(100% - 2px);
+        width: 0;
+        height: 18px;
+        border-left: 3px dashed rgba(233, 111, 118, 0.72);
+        content: "";
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__mark {
+        display: grid;
+        place-items: center;
+        width: 86px;
+        aspect-ratio: 1;
+        border: 4px double #f3c7c8;
+        border-radius: 999px;
+        color: #e96f76;
+        background: linear-gradient(180deg, #fff 0%, #fff5f5 100%);
+        box-shadow: inset 0 0 0 7px rgba(255, 244, 244, 0.95);
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__mark-content {
+        display: grid;
+        justify-items: center;
+        gap: 3px;
+        line-height: 1.25;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__number {
+        font-size: 1.04rem;
+        font-weight: 900;
+        letter-spacing: 0;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__mark i {
+        font-size: 26px;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__text {
+        min-width: 0;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__title {
+        margin: 0 0 5px;
+        color: #c8545d;
+        font-size: clamp(1rem, 4vw, 1.15rem);
+        font-weight: 850;
+        line-height: 1.55;
+        text-wrap: balance;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__copy {
+        margin: 0;
+        color: #746b68;
+        font-size: 0.91rem;
+        line-height: 1.75;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__actions {
+        display: grid;
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        width: 100%;
+        min-height: 44px;
+        padding: 9px 13px;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 0.95rem;
+        font-weight: 800;
+        line-height: 1.25;
+        background: linear-gradient(180deg, #ef7e85 0%, #df6068 100%);
+        box-shadow: 0 7px 16px rgba(210, 87, 96, 0.24);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__button--line {
+        background: linear-gradient(180deg, #7cbd68 0%, #61a54f 100%);
+        box-shadow: 0 7px 16px rgba(87, 150, 72, 0.24);
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__line-note {
+        display: grid;
+        gap: 12px;
+        align-items: center;
+        margin-top: 18px;
+        padding: 13px;
+        border-radius: 8px;
+        background: linear-gradient(
+          90deg,
+          #fff0f0 0%,
+          #fff7f3 61%,
+          #f1f9ed 100%
+        );
+        box-shadow: inset 0 0 0 1px rgba(233, 111, 118, 0.08);
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__message {
+        display: grid;
+        grid-template-columns: 30px minmax(0, 1fr);
+        gap: 10px;
+        align-items: center;
+        min-width: 0;
+        margin: 0;
+        color: #5b5552;
+        font-size: 0.88rem;
+        line-height: 1.65;
+        font-weight: 700;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__flower {
+        display: grid;
+        place-items: center;
+        width: 30px;
+        aspect-ratio: 1;
+        border-radius: 999px;
+        color: #e96f76;
+        background: #fff;
+        box-shadow: 0 5px 12px rgba(121, 80, 72, 0.1);
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__payment {
+        display: flex;
+        gap: 9px;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 860px;
+        margin: 22px auto 0;
+        color: #6b625e;
+        font-size: 0.92rem;
+        line-height: 1.65;
+        text-align: left;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__payment i {
+        flex: 0 0 auto;
+        color: #e96f76;
+        transform: translateY(0.35em);
+      }
+
+      @media (min-width: 520px) {
+        .postpartum-care-page-body .postpartum-application-flow__inner {
+          padding: 24px 22px 22px;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__step {
+          grid-template-columns: 106px minmax(0, 1fr);
+          padding: 16px;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__mark {
+          width: 100px;
+        }
+
+        .postpartum-care-page-body
+          .postpartum-round-flow__step:not(:last-child)::after {
+          left: 66px;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__actions {
+          grid-template-columns: repeat(2, minmax(0, 180px));
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__line-note {
+          grid-template-columns: minmax(0, 1fr) auto;
+          padding: 15px 18px;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__button--line {
+          min-width: 186px;
+        }
+      }
+
+      @media (min-width: 760px) {
+        .postpartum-care-page-body .postpartum-round-flow__heading {
+          grid-template-columns: auto minmax(0, 1fr);
+          gap: 26px;
+          text-align: left;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__steps {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 18px;
+        }
+
+        .postpartum-care-page-body
+          .postpartum-round-flow__step:not(:last-child)::after {
+          display: none;
+        }
+      }
+
+      @media (min-width: 980px) {
+        .postpartum-care-page-body .postpartum-application-flow__inner {
+          padding: 28px 32px 22px;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__heading {
+          margin-bottom: 28px;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__steps {
+          grid-template-columns: repeat(5, minmax(0, 1fr));
+          gap: 20px;
+          align-items: start;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__step {
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-items: center;
+          gap: 13px;
+          min-height: 318px;
+          padding: 0 6px;
+          border: 0;
+          background: transparent;
+          box-shadow: none;
+          text-align: center;
+        }
+
+        .postpartum-care-page-body
+          .postpartum-round-flow__step:not(:last-child)::before {
+          position: absolute;
+          top: 58px;
+          left: calc(50% + 68px);
+          width: calc(100% - 92px);
+          height: 18px;
+          border-top: 3px dashed rgba(233, 111, 118, 0.72);
+          border-radius: 999px;
+          content: "";
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__mark {
+          width: min(100%, 148px);
+          max-width: 148px;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__number {
+          font-size: 1.18rem;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__mark i {
+          font-size: 34px;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__title {
+          min-height: 3.55em;
+          margin-bottom: 9px;
+          font-size: 0.98rem;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__copy {
+          min-height: 5.25em;
+          font-size: 0.86rem;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__actions {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          margin-top: 16px;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__button {
+          width: auto;
+          min-width: 142px;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__line-note {
+          margin: 24px 34px 0;
+          padding: 13px 22px;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__payment {
+          font-size: 1rem;
+        }
+      }
+
+      @media (min-width: 1120px) {
+        .postpartum-care-page-body .postpartum-round-flow__title {
+          font-size: 1.05rem;
+        }
+
+        .postpartum-care-page-body .postpartum-round-flow__copy {
+          font-size: 0.91rem;
+        }
+      }
+
+      /* Round step tuning requested 2026-07-03 */
+      .postpartum-care-page-body .postpartum-application-flow {
+        background: #fff !important;
+      }
+
+      .postpartum-care-page-body .postpartum-application-flow__inner::before,
+      .postpartum-care-page-body .postpartum-application-flow__inner::after {
+        content: none !important;
+        display: none !important;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__heading {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__label,
+      .postpartum-care-page-body .postpartum-round-flow__sprig,
+      .postpartum-care-page-body .postpartum-round-flow__flower,
+      .postpartum-care-page-body .postpartum-round-flow__payment i {
+        display: none !important;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__lead {
+        width: 100% !important;
+        justify-content: center !important;
+        text-align: center !important;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__button--line {
+        background: #79a863 !important;
+        box-shadow: 0 7px 16px rgba(121, 168, 99, 0.24) !important;
+      }
+
+      .postpartum-care-page-body .postpartum-round-flow__message {
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+      }
+    </style>
+  </head>
+
+  <body class="postpartum-care-page-body">
+    <div class="site">
+      <header class="header">
+        <div class="header__inner">
+          <a href="index.html" class="logo">
+            <img src="asset/logo.png" alt="てまりの助産院" />
+            <span class="logo__name"> てまりの助産院 </span>
+          </a>
+
+          <input type="checkbox" id="menu" class="menu-check" />
+          <label for="menu" class="menu-btn"><span></span></label>
+
+          <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="postpartum-care.html">産後ケア</a>
+            <a href="babysitter.html">ベビーシッター</a>
+            <a href="homecare.html">てまりのミカタ</a>
+            <a href="about.html">Profile</a>
+            <a href="voice.html">お客様の声</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html" class="btn btn--small">ご予約</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="tm-service-page tm-single">
+        <header class="tm-top-nav">
+          <a class="tm-logo" href="index.html">
+            <span class="tm-logo-mark"></span>
+            <span>てまりの助産院<small>Temari Midwife Care</small></span>
+          </a>
+
+          <nav class="tm-nav-links" aria-label="サービスページ">
+            <a href="postpartum-care.html" class="active">産後ケア</a>
+            <a href="babysitter.html">ベビーシッター</a>
+            <a href="homecare.html">てまりのミカタ</a>
+          </nav>
+        </header>
+
+        <section class="tm-service-hero">
+          <div class="tm-hero-copy">
+            <p class="tm-eyebrow">Service Menu</p>
+            <h1>産後ケア</h1>
+            <p>
+              ご自宅でリラックスしながら、<br />
+              <span class="text-phrase">助産師の専門的なケア</span>や<span
+                class="text-phrase"
+                >育児相談</span
+              >を受けられるプランです。
+            </p>
+          </div>
+
+          <div class="tm-hero-image">
+            <img
+              src="asset/midwife10.jpg"
+              alt="助産師が赤ちゃんとママに寄り添う様子"
+            />
+          </div>
+        </section>
+
+        <section class="tm-bookshelf">
+          <article class="tm-book-card active">
+            <div class="tm-book" data-book>
+              <div class="tm-book-spine"></div>
+
+              <div class="tm-page tm-front">
+                <div class="tm-curl-layer"></div>
+                <div class="tm-curl-layer layer2"></div>
+                <div class="tm-curl-layer layer3"></div>
+
+                <div class="tm-page-inner">
+                  <p class="tm-page-kicker">Care Menu 01</p>
+
+                  <div class="tm-book-head">
+                    <div>
+                      <span class="tm-badge"
+                        >川崎市産後ケア事業・産後すぐのケアに</span
+                      >
+                      <h2>ケア内容・メニュー</h2>
+                      <p>
+                        ご自宅でリラックスしながら、助産師の専門的なケアや育児相談を受けられるプランです。
+                        授乳やミルク、赤ちゃんの体重、産後の体調など、気になることを丁寧に確認します。
+                      </p>
+                    </div>
+
+                    <img
+                      src="asset/rattle.jpg"
+                      alt="産後ケアの内容を表す赤ちゃん用ラトルのイラスト"
+                      class="tm-midwife-img"
+                    />
+                  </div>
+
+                  <div class="tm-info-row">
+                    <div>
+                      <b>対象</b>
+                      <span>
+                        生後4か月から12か月未満の赤ちゃんとママ<br />
+                        川崎市内にお住まいの方
+                      </span>
+                    </div>
+
+                    <div>
+                      <b>エリア</b>
+                      <span>川崎市・中原区・高津区を中心に訪問しています</span>
+                    </div>
+
+                    <div>
+                      <b>料金</b>
+                      <span>
+                        1〜5回目 2,500円 / 90分<br />
+                        6〜7回目 5,000円 / 90分
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="tm-list-row">
+                    <section class="tm-list-card can">
+                      <h3>できること</h3>
+                      <ul>
+                        <li>授乳・母乳・ミルクの足し方相談</li>
+                        <li>乳腺炎などのおっぱいトラブル相談</li>
+                        <li>抱っこ・寝かしつけ・生活リズム相談</li>
+                        <li>沐浴、離乳食、卒乳の相談</li>
+                        <li>産後の体調管理と心身のリフレッシュ</li>
+                      </ul>
+                    </section>
+
+                    <section class="tm-list-card cannot">
+                      <h3>できないこと</h3>
+                      <ul>
+                        <li>保護者様の外出中のお預かり</li>
+                        <li>お子様のお預かりのみの利用</li>
+                        <li>
+                          1日に2枠、180分を続けて利用すること<span
+                            class="tm-list-note"
+                            >（ただし双子ちゃんは1日に2枠ご利用できます）</span
+                          >
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+
+                  <button
+                    class="tm-button flip pc-only"
+                    type="button"
+                    data-flip="next"
+                  >
+                    ご利用イメージを見る <span>→</span>
+                  </button>
+
+                  <details class="tm-course-accordion">
+                    <summary>ご利用イメージを見る <span>→</span></summary>
+
+                    <div class="tm-course-panel">
+                      <div class="tm-page-inner tm-course">
+                        <p class="tm-page-kicker">Model Course</p>
+                        <h2>ご利用イメージ</h2>
+                        <p>
+                          授乳やミルクのご相談を中心にした90分コースの例です。
+                        </p>
+
+                        <ol class="tm-timeline">
+                          <li>
+                            <span>01</span>今の授乳の様子やお困りごとを伺います
+                          </li>
+                          <li>
+                            <span>02</span
+                            >赤ちゃんの体重や授乳の様子を一緒に確認します<br />母乳の分泌を確認、個別に応じた乳房マッサージします
+                          </li>
+                          <li>
+                            <span>03</span
+                            >授乳姿勢やミルク量などを具体的にご提案します
+                          </li>
+                          <li>
+                            <span>04</span>明日からできることを一緒に整理します
+                          </li>
+                        </ol>
+
+                        <div class="tm-note">
+                          お悩みに合わせて内容は変わります。沐浴、寝かしつけ、離乳食などの相談も承ります。
+                        </div>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </div>
+
+              <div class="tm-page tm-back">
+                <div class="tm-page-inner tm-course">
+                  <p class="tm-page-kicker">Model Course</p>
+                  <h2>ご利用イメージ</h2>
+                  <p>授乳やミルクのご相談を中心にした90分コースの例です。</p>
+
+                  <ol class="tm-timeline">
+                    <li><span>01</span>今の授乳の様子やお困りごとを伺います</li>
+                    <li>
+                      <span>02</span
+                      >赤ちゃんの体重や授乳の様子を一緒に確認します<br />母乳の分泌を確認、個別に応じた乳房マッサージします
+                    </li>
+                    <li>
+                      <span>03</span
+                      >授乳姿勢やミルク量などを具体的にご提案します
+                    </li>
+                    <li><span>04</span>明日からできることを一緒に整理します</li>
+                  </ol>
+
+                  <div class="tm-note">
+                    お悩みに合わせて内容は変わります。沐浴、寝かしつけ、離乳食などの相談も承ります。
+                  </div>
+
+                  <div class="tm-back-btn-wrap">
+                    <button
+                      type="button"
+                      class="tm-button flip"
+                      data-flip="prev"
+                    >
+                      ケア内容に戻る <span>↩</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section
+          class="postpartum-application-flow"
+          aria-labelledby="postpartum-application-flow-title"
+        >
+          <div class="postpartum-application-flow__inner">
+            <div class="postpartum-round-flow__heading">
+              <h2
+                id="postpartum-application-flow-title"
+                class="postpartum-round-flow__label"
+              >
+                産後ケアのお申し込み方法
+              </h2>
+              <p class="postpartum-round-flow__lead">
+                <span class="postpartum-round-flow__lead-line"
+                  >5つのステップで、</span
+                >
+                <span class="postpartum-round-flow__lead-line"
+                  >かんたんにお申し込みいただけます</span
+                >
+              </p>
+            </div>
+
+            <ol class="postpartum-round-flow__steps">
+              <li class="postpartum-round-flow__step">
+                <div class="postpartum-round-flow__mark" aria-hidden="true">
+                  <div class="postpartum-round-flow__mark-content">
+                    <span class="postpartum-round-flow__number">01</span>
+                    <i class="fa-regular fa-file-lines"></i>
+                  </div>
+                </div>
+                <div class="postpartum-round-flow__text">
+                  <h3 class="postpartum-round-flow__title">e-KAWASAKIで申請</h3>
+                  <p class="postpartum-round-flow__copy">
+                    川崎市の申請サイトです。申請後、メールで利用承認通知書が届きます。
+                  </p>
+                  <div class="postpartum-round-flow__actions">
+                    <a
+                      class="postpartum-round-flow__button"
+                      href="https://lgpos.task-asp.net/cu/141305/ea/residents/portal/home"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      申請サイトへ
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="postpartum-round-flow__step">
+                <div class="postpartum-round-flow__mark" aria-hidden="true">
+                  <div class="postpartum-round-flow__mark-content">
+                    <span class="postpartum-round-flow__number">02</span>
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                </div>
+                <div class="postpartum-round-flow__text">
+                  <h3 class="postpartum-round-flow__title">助産師会に電話</h3>
+                  <p class="postpartum-round-flow__copy">
+                    利用承認通知書が届いたら、<br />川崎市助産師会(045-819-4635)へお電話ください。
+                  </p>
+                  <div class="postpartum-round-flow__actions">
+                    <span
+                      class="postpartum-round-flow__button is-disabled"
+                      role="button"
+                      aria-disabled="true"
+                      ><i class="fa-solid fa-phone" aria-hidden="true"></i>
+                      電話する</span
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li class="postpartum-round-flow__step">
+                <div class="postpartum-round-flow__mark" aria-hidden="true">
+                  <div class="postpartum-round-flow__mark-content">
+                    <span class="postpartum-round-flow__number">03</span>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="postpartum-round-flow__text">
+                  <h3 class="postpartum-round-flow__title">
+                    てまりの助産院を希望
+                  </h3>
+                  <p class="postpartum-round-flow__copy">
+                    ご希望の日程や相談内容を伝え、訪問日時を調整します。
+                  </p>
+                  <div class="postpartum-round-flow__actions">
+                    <a
+                      class="postpartum-round-flow__button"
+                      href="https://lin.ee/zsq3Qc5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i
+                        class="fa-regular fa-comment-dots"
+                        aria-hidden="true"
+                      ></i>
+                      LINEで相談
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="postpartum-round-flow__step">
+                <div class="postpartum-round-flow__mark" aria-hidden="true">
+                  <div class="postpartum-round-flow__mark-content">
+                    <span class="postpartum-round-flow__number">04</span>
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                </div>
+                <div class="postpartum-round-flow__text">
+                  <h3 class="postpartum-round-flow__title">確認のお電話</h3>
+                  <p class="postpartum-round-flow__copy">
+                    てまりの助産院から、当日の時間や準備していただく物をお伝えします。
+                  </p>
+                  <div class="postpartum-round-flow__actions">
+                    <span
+                      class="postpartum-round-flow__button is-disabled"
+                      role="button"
+                      aria-disabled="true"
+                      ><i class="fa-solid fa-phone" aria-hidden="true"></i>
+                      電話する</span
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li class="postpartum-round-flow__step">
+                <div class="postpartum-round-flow__mark" aria-hidden="true">
+                  <div class="postpartum-round-flow__mark-content">
+                    <span class="postpartum-round-flow__number">05</span>
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                </div>
+                <div class="postpartum-round-flow__text">
+                  <h3 class="postpartum-round-flow__title">ご自宅へ訪問</h3>
+                  <p class="postpartum-round-flow__copy">
+                    助産師がご自宅に伺い、ケアを行います。
+                  </p>
+                </div>
+              </li>
+            </ol>
+
+            <div
+              class="postpartum-round-flow__line-note"
+              aria-label="LINE相談のご案内"
+            >
+              <p class="postpartum-round-flow__message">
+                <span
+                  >わからないことがあれば、てまりの公式LINEから「産後ケアについて聞きたい」と送ってくださいね。<br />助産師がご案内します。</span
+                >
+              </p>
+              <a
+                class="postpartum-round-flow__button postpartum-round-flow__button--line"
+                href="https://lin.ee/zsq3Qc5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-regular fa-comment-dots" aria-hidden="true"></i>
+                公式LINEで相談する
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <p class="postpartum-round-flow__payment">
+              <span
+                >※お支払いは当日現金か、タッチ決済できるカード払いが可能です。</span
+              >
+            </p>
+          </div>
+        </section>
+
+        <section class="faq-contact">
+          <div class="dot-frame-message">
+            <p>
+              <span class="reservation-highlight-block"
+                >てまりの助産院へのご相談・ご予約は、<br /><br
+                  class="sp-only"
+                />公式LINEより承っております。</span
+              >
+            </p>
+
+            <a
+              href="https://lin.ee/zsq3Qc5"
+              class="postnatal-flow__line"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>LINE</span>
+              公式LINEで相談する
+              <b>›</b>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <a
+        href="https://lin.ee/zsq3Qc5"
+        class="floating-reserve-button"
+        aria-label="公式LINEで予約する"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="asset/button.png" alt="ご予約はこちら" />
+      </a>
+
+      <footer class="temari-flower-footer">
+        <div class="footer-deco deco-1">
+          <img src="asset/footer-flower_left.png" alt="花のあしらい左" />
+        </div>
+
+        <div class="footer-deco deco-2">
+          <img src="asset/footer-flower_right.png" alt="花のあしらい右" />
+        </div>
+        <div class="footer-deco deco-3"></div>
+        <div class="footer-deco deco-4"></div>
+
+        <div class="temari-flower-footer__inner">
+          <div class="footer-brand">
+            <img src="asset/logo.png" alt="Temarino Maternity Centre" />
+            <h2>てまりの助産院</h2>
+          </div>
+
+          <div class="footer-dot-line"></div>
+
+          <h3 class="footer-hours-title"><span>✿</span> 診療時間のご案内</h3>
+
+          <table class="flower-hours-table">
+            <thead>
+              <tr>
+                <th>診療時間</th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+                <th>土</th>
+                <th>日・祝</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>9:00 - 12:00</th>
+                <td>○</td>
+                <td>−</td>
+                <td>○</td>
+                <td>−</td>
+                <td>○</td>
+                <td>−</td>
+                <td>−</td>
+              </tr>
+              <tr>
+                <th>13:00 - 16:00</th>
+                <td>○</td>
+                <td>−</td>
+                <td>○</td>
+                <td>○</td>
+                <td>○</td>
+                <td>−</td>
+                <td>−</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <ul class="footer-notice">
+            <li>日曜・祝日は休診です。</li>
+            <li>
+              ご予約の空き状況や、メニューのご相談など、どうぞお気軽にお問い合わせください。
+            </li>
+          </ul>
+
+          <div class="footer-contact-links">
+            <a href="https://lin.ee/zsq3Qc5" class="footer-contact-link">
+              <span class="footer-icon footer-icon--line">LINE</span>
+              <span>公式LINE</span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/temarino.mw"
+              class="footer-contact-link"
+            >
+              <span class="footer-icon footer-icon--instagram">
+                <i class="fab fa-instagram"></i>
+              </span>
+              <span>公式Instagram</span>
+            </a>
+
+            <a
+              href="mailto:temarinomariko@gmail.com"
+              class="footer-contact-link"
+            >
+              <span class="footer-icon footer-icon--mail">
+                <i class="far fa-envelope"></i>
+              </span>
+              <span>メールでのお問い合わせ</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom-wave"></div>
+
+        <div class="footer-bottom">
+          <p>© てまりの助産院 All Rights Reserved.</p>
+          <span></span>
+          <a href="privacy.html">プライバシーポリシー</a>
+        </div>
+      </footer>
+    </div>
+
+    <button
+      class="scroll-menu-button"
+      type="button"
+      aria-label="メニューを開く"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="scroll-menu-panel">
+      <a href="index.html">Home</a>
+      <a href="postpartum-care.html">産後ケア</a>
+      <a href="babysitter.html">ベビーシッター</a>
+      <a href="homecare.html">てまりのミカタ</a>
+      <a href="about.html">Profile</a>
+      <a href="voice.html">お客様の声</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="btn btn--small">ご予約</a>
+    </div>
+
+    <!-- トップへ戻るボタン -->
+    <a href="#" class="page-top-button" aria-label="ページトップへ戻る"> ↑ </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

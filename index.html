@@ -1,0 +1,719 @@
+﻿<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>てまりの助産院｜川崎市の訪問型産後ケア・助産師ベビーシッター</title>
+    <script>
+      (() => {
+        const introSeenKey = "temarinoIntroSeen";
+
+        try {
+          if (sessionStorage.getItem(introSeenKey) !== "1") {
+            window.location.replace("intro.html");
+          }
+        } catch (error) {
+          // If sessionStorage is unavailable, keep the home page accessible.
+        }
+      })();
+    </script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="asset/favicon.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="asset/favicon.png" />
+
+    <meta
+      name="description"
+      content="川崎市中原区・高津区、横浜市港北区（日吉・綱島）エリアの訪問型産後ケア・助産師ベビーシッター。武蔵小杉・元住吉・武蔵新城在住のママのご自宅に伺います。川崎市産後ケア委託事業対応。"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Klee+One&family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body class="index-page-body">
+    <div class="site">
+      <header class="header">
+        <div class="header__inner">
+          <a href="index.html" class="logo">
+            <img src="asset/logo.png" alt="てまりの助産院" />
+            <span class="logo__name"> てまりの助産院 </span>
+          </a>
+
+          <input type="checkbox" id="menu" class="menu-check" />
+          <label for="menu" class="menu-btn"><span></span></label>
+
+          <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="postpartum-care.html">産後ケア</a>
+            <a href="babysitter.html">ベビーシッター</a>
+            <a href="homecare.html">てまりのミカタ</a>
+            <a href="about.html">Profile</a>
+            <a href="voice.html">お客様の声</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html" class="btn btn--small">ご予約</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero__inner">
+            <div class="hero__body">
+              <p class="hero__label">
+                武蔵小杉・元住吉・川崎市の<span class="text-phrase"
+                  >訪問型産後ケア</span
+                >・<br />
+                <span class="text-phrase">助産師ベビーシッター</span>
+              </p>
+
+              <h1 class="hero__title">
+                <span class="hero__title-line">正解よりも</span>
+                <span class="hero__title-line">
+                  <span class="accent">あなたらしい育児を</span>
+                </span>
+              </h1>
+
+              <div class="hero__line"></div>
+
+              <p class="hero__copy">
+                心をほどいて<br />
+                前を向ける日のために
+              </p>
+
+              <div class="hero-achievements">
+                <div class="hero-achievement">
+                  <div class="laurel-frame">
+                    <i class="fa-solid fa-user-nurse"></i>
+
+                    <p class="hero-achievement__small">
+                      <span class="text-phrase">助産師・保健師・看護師</span>
+                    </p>
+
+                    <p class="hero-achievement__large">
+                      延べ1,200組以上の<br />
+                      訪問実績
+                    </p>
+                  </div>
+                </div>
+
+                <div class="hero-achievement">
+                  <div class="laurel-frame">
+                    <i class="fa-solid fa-house"></i>
+
+                    <p
+                      class="hero-achievement__large hero-achievement__large--sub"
+                    >
+                      3児の母でもある<br /><span class="text-phrase"
+                        >助産師</span
+                      >が<br />
+                      ご自宅へ伺います
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__visual">
+              <div class="hero-photo-wrap">
+                <div class="hero-photo-frame">
+                  <img
+                    src="asset/hero2.jpg"
+                    alt="赤ちゃんの足にそっと触れる手"
+                  />
+                </div>
+
+                <span class="hero-ripple ripple-1"></span>
+                <span class="hero-ripple ripple-2"></span>
+                <span class="hero-ripple ripple-3"></span>
+                <span class="hero-ripple ripple-4"></span>
+                <span class="hero-ripple ripple-5"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="worries" class="worries section">
+          <div class="container">
+            <h2 class="section-title section-title--center">
+              こんなお悩みありませんか？
+            </h2>
+
+            <div class="worries__grid">
+              <article class="worry-card">
+                <img
+                  src="asset/icon10.jpeg"
+                  alt="授乳や母乳の不安を表すイメージ"
+                />
+                <h3>授乳や母乳のことが不安</h3>
+                <p>母乳が足りているか心配。うまく飲めているか不安。</p>
+              </article>
+
+              <article class="worry-card">
+                <img
+                  src="asset/icon11.jpeg"
+                  alt="赤ちゃんの寝かしつけの悩みを表すイメージ"
+                />
+                <h3>寝かしつけに悩んでいる</h3>
+                <p>なかなか寝てくれない。夜泣きがつらい。</p>
+              </article>
+
+              <article class="worry-card">
+                <img
+                  src="asset/icon14.jpeg"
+                  alt="産後に休息を取りたい気持ちを表すイメージ"
+                />
+                <h3>少し眠りたい・休みたい</h3>
+                <p>ゆっくり休める時間がほしい。心も体も休めたい。</p>
+              </article>
+
+              <article class="worry-card">
+                <img
+                  src="asset/icon12.jpeg"
+                  alt="育児情報に迷う様子を表すイメージ"
+                />
+                <h3>育児情報が多すぎて迷う</h3>
+                <p>何が正しいのかわからず、情報に振り回されてしまう。</p>
+              </article>
+
+              <article class="worry-card">
+                <img
+                  src="asset/icon16.jpeg"
+                  alt="産後の体調や気持ちのつらさを表すイメージ"
+                />
+                <h3>産後の体調や気持ちがつらい</h3>
+                <p>体の回復が進まない。気持ちが落ち込みやすい。</p>
+              </article>
+
+              <article class="worry-card">
+                <img
+                  src="asset/icon15.jpeg"
+                  alt="身近な相談先やサポートを求める様子のイメージ"
+                />
+                <h3>行政サービスだけでは足りない</h3>
+                <p>もっと身近に相談できる場所やサポートがほしい。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="temari-feature section section-transition">
+          <div class="container">
+            <div class="temari-feature__head">
+              <h2 class="section-title section-title--center">
+                <span>てまりの</span>だから、できること。
+              </h2>
+
+              <p class="temari-feature__lead">
+                赤ちゃんだけでなく、お母さんの気持ちにも寄り添いながら、<br
+                  class="pc-only"
+                />
+                ご家庭に合ったケアを一緒に考えます。
+              </p>
+            </div>
+
+            <div class="temari-feature__grid">
+              <article class="temari-feature__item">
+                <div class="temari-feature__num">01</div>
+                <div class="temari-feature__text">
+                  <h3>ご家庭に合った方法を、一緒に考えます</h3>
+                  <p>
+                    母乳かミルクか、抱っこの仕方や寝かしつけ。
+                    育児に正解はひとつではありません。
+                    ご家族のペースに合わせて、無理のない方法を一緒に考えます。
+                  </p>
+                </div>
+              </article>
+
+              <article class="temari-feature__item">
+                <div class="temari-feature__num">02</div>
+                <div class="temari-feature__text">
+                  <h3>相談も、お預かりも、同じ助産師が担当します</h3>
+                  <p>
+                    産後ケアで関わった助産師が、そのままベビーシッターも担当できます。
+                    赤ちゃんのことを知っている人に預けられる<br
+                      class="sp-only"
+                    />安心感 があります。
+                  </p>
+                </div>
+              </article>
+
+              <article class="temari-feature__item">
+                <div class="temari-feature__num">03</div>
+                <div class="temari-feature__text">
+                  <h3>産後ケアが終わっても、つながれます</h3>
+                  <p>
+                    離乳食、夜泣き、仕事復帰など、月齢が上がるたびに悩みは変わります。<br />
+                    「また相談したい」と思ったとき、続けて頼れる存在でいられることを<br
+                      class="sp-only"
+                    />大切にしています。
+                  </p>
+                </div>
+              </article>
+
+              <article class="temari-feature__item">
+                <div class="temari-feature__num">04</div>
+                <div class="temari-feature__text">
+                  <h3>赤ちゃんだけでなく、お母さんのことも大切にします</h3>
+                  <p>
+                    「これでいいのかな」「なんとなくつらい」
+                    そんな気持ちも話せる場所です。
+                    お母さんが少し楽になることが、赤ちゃんへの一番のケアだと考えています。
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3択サービス案内ここから -->
+        <section class="midwife-service-guide watercolor-guide">
+          <div class="watercolor-guide__inner">
+            <p class="watercolor-guide__small">
+              どのサービスが合うか迷ったら･･･
+            </p>
+
+            <h2 class="section-title">あなたに合うサービスを選ぶ</h2>
+            <div class="watercolor-guide__list">
+              <a
+                href="postpartum-care.html"
+                class="watercolor-card watercolor-card--pink"
+              >
+                <span class="watercolor-card__icon">
+                  <i class="fa-solid fa-building-columns"></i>
+                </span>
+                <span class="watercolor-card__main">行政の補助を使いたい</span>
+                <span class="watercolor-card__button">川崎市産後ケアへ →</span>
+              </a>
+
+              <a
+                href="babysitter.html"
+                class="watercolor-card watercolor-card--green"
+              >
+                <span class="watercolor-card__icon">
+                  <i class="fa-regular fa-user"></i>
+                </span>
+                <span class="watercolor-card__main"
+                  >外出・休息の時間がほしい</span
+                >
+                <span class="watercolor-card__button">ベビーシッターへ →</span>
+              </a>
+
+              <a
+                href="homecare.html"
+                class="watercolor-card watercolor-card--blue"
+              >
+                <span class="watercolor-card__icon">
+                  <i class="fa-regular fa-comment-dots"></i>
+                </span>
+                <span class="watercolor-card__main">相談・ケアだけしたい</span>
+                <span class="watercolor-card__button">訪問ケアへ →</span>
+              </a>
+            </div>
+
+            <div class="watercolor-guide__divider">
+              <span></span>
+              <img src="asset/flower4.png" alt="区切り線に添えた花のあしらい" />
+              <span></span>
+            </div>
+
+            <div class="watercolor-guide__point">
+              <div class="watercolor-guide__point-title">
+                <i class="fa-regular fa-lightbulb"></i>
+                <span>迷ったときのポイント</span>
+              </div>
+
+              <ul>
+                <li>行政の補助を活用したい方は「川崎市産後ケア」がおすすめ</li>
+                <li>
+                  リフレッシュや休息の時間がほしい方は「ベビーシッター」がおすすめ
+                </li>
+                <li>相談やケアをじっくり受けたい方は「訪問ケア」がおすすめ</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="about-message section about-fade section-transition">
+          <div class="container">
+            <div class="magazine-menu__head">
+              <h2 class="section-title section-title--center">
+                メニュー・料金
+              </h2>
+              <p class="magazine-menu__lead">
+                その日の気持ちやご家庭の状況に合わせて、
+                必要なサポートをお選びいただけます。
+              </p>
+            </div>
+
+            <div class="magazine-menu__grid">
+              <article class="magazine-card" id="kawasaki-postpartum-care">
+                <a href="postpartum-care.html" class="magazine-card__link">
+                  <div class="magazine-card__image">
+                    <img src="asset/midwife6.jpg" alt="助産師の写真" />
+                  </div>
+                  <div class="magazine-card__body">
+                    <p class="magazine-card__number">01</p>
+                    <p class="magazine-card__category">産後すぐのケアに</p>
+                    <h3>産後ケア</h3>
+                    <p class="magazine-card__text">
+                      ご自宅で助産師の専門的なケアや育児相談を受けられるプランです。
+                    </p>
+
+                    <p class="magazine-card__price">
+                      川崎市委託事業<br />
+                      1〜5回目：2,500円 / 90分<br />
+                      6〜7回目：5,000円 / 90分
+                    </p>
+                    <span class="magazine-card__more">詳しく見る　→</span>
+                  </div>
+                </a>
+              </article>
+
+              <article class="magazine-card" id="babysitter">
+                <a href="babysitter.html" class="magazine-card__link">
+                  <div class="magazine-card__image">
+                    <img src="asset/baby1.jpg" alt="赤ちゃんの寝姿" />
+                  </div>
+                  <div class="magazine-card__body">
+                    <p class="magazine-card__number">02</p>
+                    <p class="magazine-card__category">
+                      赤ちゃんを預けたいときに
+                    </p>
+                    <h3>ベビーシッター</h3>
+                    <p class="magazine-card__text">
+                      少し眠りたい、外出したい、夫婦で休みたい時に、赤ちゃんを安心してお預かりします。
+                    </p>
+                    <p class="magazine-card__price">
+                      2時間 8,000円<br />
+                      3時間 11,500円<br />
+                      延長30分 2,000円
+                    </p>
+                    <span class="magazine-card__more">詳しく見る　→</span>
+                  </div>
+                </a>
+              </article>
+
+              <article class="magazine-card" id="home-visit-care">
+                <a href="homecare.html" class="magazine-card__link">
+                  <div class="magazine-card__image">
+                    <img src="asset/baby_dress.jpg" alt="ベビードレス" />
+                  </div>
+                  <div class="magazine-card__body">
+                    <p class="magazine-card__number">03</p>
+                    <p class="magazine-card__category">
+                      じっくり相談したいときに
+                    </p>
+                    <h3>てまりのミカタ⁠</h3>
+                    <p class="magazine-card__text">
+                      乳腺炎・断乳・卒乳・母乳相談など、目的に合わせて集中的にサポートします。
+                    </p>
+                    <p class="magazine-card__price">
+                      6,000円 / 60分<br />
+                      以降10分ごとに1,000円
+                    </p>
+                    <span class="magazine-card__more">詳しく見る　→</span>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-message section about-fade">
+          <div class="container">
+            <div class="about-message__box">
+              <img
+                src="asset/ユーカリ2.png"
+                alt="左側のユーカリの葉のあしらい"
+                class="about-leaf about-leaf--left"
+              />
+              <img
+                src="asset/ユーカリ2.png"
+                alt="右側のユーカリの葉のあしらい"
+                class="about-leaf about-leaf--right"
+              />
+
+              <p class="about-label">Our Thought</p>
+              <h2 class="section-title">
+                助産師として<br class="sp-only" />大切にしていること
+              </h2>
+
+              <p>
+                インターネットには多くの育児情報が<br
+                  class="sp-only"
+                />あふれていますが、
+                情報が多すぎて「何が自分にとっての正解かわからない」と
+                不安になることも少なくありません。
+              </p>
+
+              <p>
+                育児にたった一つの「正解」はありません。
+                てまりの助産院では、一般論を押しつけるのではなく、
+                あなたと赤ちゃんのペースに合わせた<br
+                  class="sp-only"
+                />やり方を一緒に考えていきます。
+              </p>
+
+              <p>
+                授乳や母乳の不安、赤ちゃんの寝かしつけ、産後の体調のこと、
+                誰かに話したかったこと。<br />
+                ひとりで抱え込まないで、どうぞそのままの気持ちを<br
+                  class="sp-only"
+                />聞かせてください。
+              </p>
+            </div>
+
+            <div class="view-more-wrap">
+              <a href="about.html" class="view-more-btn">
+                <span class="view-more-circle">
+                  <span>助産師</span>
+                  <span>紹介</span>
+                </span>
+                <span class="view-more-line"></span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="reservation" class="faq-reservation section">
+          <section class="info-panels">
+            <div class="info-panels__inner">
+              <div class="info-card info-card--hours">
+                <h2 class="info-card__title">診療時間</h2>
+
+                <table class="info-hours-table">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>月</th>
+                      <th>火</th>
+                      <th>水</th>
+                      <th>木</th>
+                      <th>金</th>
+                      <th>土</th>
+                      <th>日・祝</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th><span>9:00-12:00</span></th>
+                      <td>○</td>
+                      <td>−</td>
+                      <td>○</td>
+                      <td>−</td>
+                      <td>○</td>
+                      <td>−</td>
+                      <td>−</td>
+                    </tr>
+                    <tr>
+                      <th><span>13:00-16:00</span></th>
+                      <td>○</td>
+                      <td>−</td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>−</td>
+                      <td>−</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <p class="info-note">
+                  ※ 産後ケアの訪問時間は上記時間内で調整いたします。
+                </p>
+                <p class="info-note">
+                  ※ 赤ちゃんを預けたいときに、は要相談で時間外対応も可能です。
+                </p>
+              </div>
+
+              <div class="container">
+                <div class="contact-intro__box">
+                  <p class="contact-label">Message</p>
+                  <h2>ご予約について</h2>
+
+                  <p>
+                    <span class="reservation-highlight-block"
+                      >てまりの助産院へのご相談・ご予約は、公式LINEより承っております。</span
+                    >
+                  </p>
+
+                  <p>
+                    授乳や母乳のこと、赤ちゃんの体重や発育のこと、
+                    産後の体調や育児の不安など、どんな小さなお悩みでも大丈夫です。
+                  </p>
+
+                  <div class="contact-buttons">
+                    <a
+                      href="https://lin.ee/zsq3Qc5"
+                      class="info-btn info-btn--line"
+                      >公式LINEで相談する</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <a
+        href="https://lin.ee/zsq3Qc5"
+        class="floating-reserve-button"
+        aria-label="公式LINEで予約する"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="asset/button.png" alt="ご予約はこちら" />
+      </a>
+
+      <footer class="temari-flower-footer">
+        <div class="footer-deco deco-1">
+          <img src="asset/footer-flower_left.png" alt="花のあしらい左" />
+        </div>
+
+        <div class="footer-deco deco-2">
+          <img src="asset/footer-flower_right.png" alt="花のあしらい右" />
+        </div>
+        <div class="footer-deco deco-3"></div>
+        <div class="footer-deco deco-4"></div>
+
+        <div class="temari-flower-footer__inner">
+          <div class="footer-brand">
+            <img src="asset/logo.png" alt="Temarino Maternity Centre" />
+            <h2>てまりの助産院</h2>
+          </div>
+
+          <div class="footer-dot-line"></div>
+
+          <h3 class="footer-hours-title"><span>✿</span> 診療時間のご案内</h3>
+
+          <table class="flower-hours-table">
+            <thead>
+              <tr>
+                <th>診療時間</th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+                <th>土</th>
+                <th>日・祝</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>9:00 - 12:00</th>
+                <td>○</td>
+                <td>−</td>
+                <td>○</td>
+                <td>−</td>
+                <td>○</td>
+                <td>−</td>
+                <td>−</td>
+              </tr>
+              <tr>
+                <th>13:00 - 16:00</th>
+                <td>○</td>
+                <td>−</td>
+                <td>○</td>
+                <td>○</td>
+                <td>○</td>
+                <td>−</td>
+                <td>−</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <ul class="footer-notice">
+            <li>日曜・祝日は休診です。</li>
+            <li>
+              ご予約の空き状況や、メニューのご相談など、どうぞお気軽にお問い合わせください。
+            </li>
+          </ul>
+
+          <div class="footer-contact-links">
+            <a
+              href="https://lin.ee/zsq3Qc5"
+              class="footer-contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="footer-icon footer-icon--line">LINE</span>
+              <span>公式LINE</span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/temarino.mw"
+              class="footer-contact-link"
+            >
+              <span class="footer-icon footer-icon--instagram">
+                <i class="fab fa-instagram"></i>
+              </span>
+              <span>公式Instagram</span>
+            </a>
+
+            <a
+              href="mailto:temarinomariko@gmail.com"
+              class="footer-contact-link"
+            >
+              <span class="footer-icon footer-icon--mail">
+                <i class="far fa-envelope"></i>
+              </span>
+              <span>メールでのお問い合わせ</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom-wave"></div>
+
+        <div class="footer-bottom">
+          <p>© てまりの助産院 All Rights Reserved.</p>
+          <span></span>
+          <a href="privacy.html">プライバシーポリシー</a>
+        </div>
+      </footer>
+    </div>
+
+    <button
+      class="scroll-menu-button"
+      type="button"
+      aria-label="メニューを開く"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="scroll-menu-panel">
+      <a href="index.html">Home</a>
+      <a href="postpartum-care.html">産後ケア</a>
+      <a href="babysitter.html">ベビーシッター</a>
+      <a href="homecare.html">てまりのミカタ</a>
+      <a href="about.html">Profile</a>
+      <a href="voice.html">お客様の声</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="btn btn--small">ご予約</a>
+    </div>
+
+    <!-- トップへ戻るボタン -->
+    <a href="#" class="page-top-button" aria-label="ページトップへ戻る"> ↑ </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
