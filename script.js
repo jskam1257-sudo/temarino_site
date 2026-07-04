@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // タブ
   document.querySelectorAll(".tab-btn").forEach((button) => {
     button.addEventListener("click", () => {
       const target = button.dataset.target;
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // PCスクロールメニュー
   const scrollMenuButton = document.querySelector(".scroll-menu-button");
   const hero = document.querySelector(".hero");
 
@@ -53,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 本のページめくり
   document.querySelectorAll(".flip-btn").forEach((button) => {
     button.addEventListener("click", () => {
       const book = button.closest("[data-book]");
@@ -63,14 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ヒーロー
   if (hero) {
     setTimeout(() => {
       hero.classList.add("is-active");
     }, 300);
   }
 
-  // セクションタイトル
   const titles = document.querySelectorAll(
     [
       ".section-title",
@@ -88,6 +83,13 @@ document.addEventListener("DOMContentLoaded", () => {
       title.classList.add("is-ready");
     });
 
+    if (!("IntersectionObserver" in window)) {
+      titles.forEach((title) => {
+        title.classList.add("is-show");
+      });
+      return;
+    }
+
     const titleObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -98,20 +100,33 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       },
       {
-        threshold: 0.4,
+        rootMargin: "0px 0px -8% 0px",
+        threshold: 0.12,
       },
     );
 
     titles.forEach((title) => {
       titleObserver.observe(title);
     });
+
+    requestAnimationFrame(() => {
+      const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      titles.forEach((title) => {
+        const rect = title.getBoundingClientRect();
+
+        if (rect.top < viewportHeight && rect.bottom > 0) {
+          title.classList.add("is-show");
+          titleObserver.unobserve(title);
+        }
+      });
+    });
   }, 300);
 
-  // フッター付近で固定予約ボタンを非表示
   const reserveButtons = document.querySelectorAll(".floating-reserve-button");
-  const footer = document.querySelector(".temari-footer");
+  const flowerFooter = document.querySelector(".temari-footer");
 
-  if (reserveButtons.length && footer) {
+  if (reserveButtons.length && flowerFooter) {
     const footerObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         reserveButtons.forEach((button) => {
@@ -120,10 +135,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    footerObserver.observe(footer);
+    footerObserver.observe(flowerFooter);
   }
 
-  // ハンバーガーメニュー：リンククリック後に閉じる
   const menuCheck = document.querySelector("#menu");
   const navLinks = document.querySelectorAll(".nav a");
 
@@ -144,7 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // スマホ・タブレット：モデルコースを下に表示
   document.querySelectorAll(".tm-button.flip").forEach((button) => {
     button.addEventListener("click", (e) => {
       if (button.matches("[data-flip]")) return;
@@ -159,9 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const backPage = book.querySelector(".tm-back");
       if (backPage) {
-        backPage.style.display = book.classList.contains(
-          "is-mobile-course-open",
-        )
+        backPage.style.display = book.classList.contains("is-mobile-course-open")
           ? "block"
           : "none";
       }
@@ -172,7 +183,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // About page fade animation
   const aboutFadeItems = document.querySelectorAll(".about-fade");
 
   if (aboutFadeItems.length) {
@@ -195,6 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   const reserveButton = document.querySelector(".floating-reserve-button");
   const pageTopButton = document.querySelector(".page-top-button");
@@ -245,6 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollToTopSlowly();
   });
 });
+
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.querySelectorAll(".hero-ripple").forEach((ripple) => {
@@ -253,15 +265,12 @@ window.addEventListener("load", () => {
   }, 7000);
 });
 
-
-// Menu3 pages: desktop book flip for data-flip buttons.
 document.addEventListener(
   "click",
   (event) => {
     const button = event.target.closest(".tm-button.flip[data-flip]");
     if (!button) return;
 
-    // On phones and tablets, keep the existing details/accordion design.
     if (window.innerWidth <= 1024) return;
 
     event.preventDefault();

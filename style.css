@@ -13246,3 +13246,111 @@ th {
     animation: none !important;
   }
 }
+
+/* Mobile/tablet hero title restore requested 2026-07-05 */
+.faq-page-body .tm-hero-copy h1,
+.contact-page-body .contact-hero__text h1,
+.voice-page-body .contact-hero__text h1,
+.postpartum-care-page-body .tm-hero-copy h1,
+.babysitter-page-body .tm-hero-copy h1,
+.homecare-page-body .tm-hero-copy h1 {
+  position: relative !important;
+  display: inline-grid !important;
+  justify-items: center !important;
+  align-items: center !important;
+  row-gap: 12px !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 0 24px !important;
+  text-align: center !important;
+  opacity: 0 !important;
+  transform: translateY(36px) !important;
+  filter: blur(8px) !important;
+  transition: none !important;
+  animation: none !important;
+  will-change: opacity, transform, filter !important;
+}
+
+.faq-page-body .tm-hero-copy h1::before,
+.contact-page-body .contact-hero__text h1::before,
+.voice-page-body .contact-hero__text h1::before,
+.postpartum-care-page-body .tm-hero-copy h1::before,
+.babysitter-page-body .tm-hero-copy h1::before,
+.homecare-page-body .tm-hero-copy h1::before {
+  content: "" !important;
+  display: block !important;
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  margin: 0 auto !important;
+  background: url("asset/flower1.png") center / contain no-repeat !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.faq-page-body .tm-hero-copy h1::after,
+.contact-page-body .contact-hero__text h1::after,
+.voice-page-body .contact-hero__text h1::after,
+.postpartum-care-page-body .tm-hero-copy h1::after,
+.babysitter-page-body .tm-hero-copy h1::after,
+.homecare-page-body .tm-hero-copy h1::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 0 !important;
+  display: block !important;
+  width: 44px !important;
+  height: 2px !important;
+  margin: 0 !important;
+  background: var(--pink) !important;
+  opacity: 0.72 !important;
+  transform: translateX(-50%) !important;
+}
+
+.faq-page-body .tm-hero-copy h1.is-show,
+.contact-page-body .contact-hero__text h1.is-show,
+.voice-page-body .contact-hero__text h1.is-show,
+.postpartum-care-page-body .tm-hero-copy h1.is-show,
+.babysitter-page-body .tm-hero-copy h1.is-show,
+.homecare-page-body .tm-hero-copy h1.is-show {
+  animation: sectionTitleFadeUp 1.2s ease forwards !important;
+}
+
+@media (max-width: 1024px) {
+  .faq-page-body .tm-hero-copy h1,
+  .contact-page-body .contact-hero__text h1,
+  .voice-page-body .contact-hero__text h1,
+  .postpartum-care-page-body .tm-hero-copy h1,
+  .babysitter-page-body .tm-hero-copy h1,
+  .homecare-page-body .tm-hero-copy h1 {
+    row-gap: 10px !important;
+  }
+
+  .faq-page-body .tm-hero-copy h1::before,
+  .contact-page-body .contact-hero__text h1::before,
+  .voice-page-body .contact-hero__text h1::before,
+  .postpartum-care-page-body .tm-hero-copy h1::before,
+  .babysitter-page-body .tm-hero-copy h1::before,
+  .homecare-page-body .tm-hero-copy h1::before {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-page-body .tm-hero-copy h1,
+  .contact-page-body .contact-hero__text h1,
+  .voice-page-body .contact-hero__text h1,
+  .postpartum-care-page-body .tm-hero-copy h1,
+  .babysitter-page-body .tm-hero-copy h1,
+  .homecare-page-body .tm-hero-copy h1 {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
