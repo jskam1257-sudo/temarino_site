@@ -12220,6 +12220,10 @@ th {
   display: inline;
 }
 
+.line-message-row {
+  display: inline;
+}
+
 @media (max-width: 900px) {
   .homecare-page-body .tm-service-hero {
     gap: 36px !important;
@@ -12386,5 +12390,110 @@ th {
   footer :where(p, li) {
     font-size: min(14px, 3.85vw) !important;
     letter-spacing: 0.01em !important;
+  }
+}
+
+/* Menu page exceptions: list cards and LINE message */
+@media (max-width: 767px) {
+  .postpartum-care-page-body .tm-list-card,
+  .babysitter-page-body .tm-list-card,
+  .homecare-page-body .tm-list-card {
+    text-align: left !important;
+  }
+
+  .postpartum-care-page-body .tm-list-card h3,
+  .babysitter-page-body .tm-list-card h3,
+  .homecare-page-body .tm-list-card h3 {
+    max-width: 100% !important;
+    text-align: center !important;
+    margin-inline: auto !important;
+  }
+
+  .postpartum-care-page-body .tm-list-card ul,
+  .babysitter-page-body .tm-list-card ul,
+  .homecare-page-body .tm-list-card ul {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    text-align: left !important;
+  }
+
+  .postpartum-care-page-body .tm-list-card li,
+  .babysitter-page-body .tm-list-card li,
+  .homecare-page-body .tm-list-card li {
+    max-width: 100% !important;
+    margin: 0 0 14px !important;
+    padding-left: 1.25em !important;
+    text-align: left !important;
+    line-height: 1.9 !important;
+    letter-spacing: 0.025em !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .postpartum-care-page-body .tm-list-card li:last-child,
+  .babysitter-page-body .tm-list-card li:last-child,
+  .homecare-page-body .tm-list-card li:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .postpartum-care-page-body .dot-frame-message,
+  .babysitter-page-body .dot-frame-message,
+  .homecare-page-body .dot-frame-message {
+    display: grid !important;
+    justify-items: center !important;
+    width: min(100% - 28px, 360px) !important;
+    margin-inline: auto !important;
+    padding: 34px 24px 28px !important;
+  }
+
+  .postpartum-care-page-body .dot-frame-message p,
+  .babysitter-page-body .dot-frame-message p,
+  .homecare-page-body .dot-frame-message p {
+    max-width: 100% !important;
+    margin: 0 auto 24px !important;
+    text-align: center !important;
+    line-height: 2.25 !important;
+    letter-spacing: 0.04em !important;
+  }
+
+  .postpartum-care-page-body .dot-frame-message .reservation-highlight-block,
+  .babysitter-page-body .dot-frame-message .reservation-highlight-block,
+  .homecare-page-body .dot-frame-message .reservation-highlight-block {
+    display: block !important;
+    max-width: 17.5em !important;
+    margin-inline: auto !important;
+    background: none !important;
+    text-align: center !important;
+  }
+
+  .postpartum-care-page-body .dot-frame-message .line-message-row,
+  .babysitter-page-body .dot-frame-message .line-message-row,
+  .homecare-page-body .dot-frame-message .line-message-row {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .postpartum-care-page-body .dot-frame-message .sp-only,
+  .babysitter-page-body .dot-frame-message .sp-only,
+  .homecare-page-body .dot-frame-message .sp-only {
+    display: none !important;
+  }
+
+  .postpartum-care-page-body .dot-frame-message .postnatal-flow__line,
+  .babysitter-page-body .dot-frame-message .postnatal-flow__line,
+  .homecare-page-body .dot-frame-message .postnatal-flow__line {
+    width: min(100%, 282px) !important;
+    max-width: 282px !important;
+    min-width: 0 !important;
+    height: 50px !important;
+    margin: 0 auto !important;
+    padding: 0 18px !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    white-space: nowrap !important;
+    font-size: 15px !important;
+    line-height: 1 !important;
   }
 }
