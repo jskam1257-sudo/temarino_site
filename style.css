@@ -12216,6 +12216,10 @@ th {
   visibility: visible !important;
 }
 
+.tm-hero-copy .hero-text-line {
+  display: inline;
+}
+
 @media (max-width: 900px) {
   .homecare-page-body .tm-service-hero {
     gap: 36px !important;
@@ -12228,10 +12232,99 @@ th {
   }
 }
 
+@media (max-width: 767px) {
+  .postpartum-care-page-body .tm-hero-copy p:last-child,
+  .babysitter-page-body .tm-hero-copy p:last-child,
+  .homecare-page-body .tm-hero-copy p:last-child {
+    width: min(100%, 23.5em) !important;
+    max-width: calc(100vw - 44px) !important;
+    margin: 22px auto 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    font-size: clamp(14px, 3.75vw, 15px) !important;
+    line-height: 2.05 !important;
+    letter-spacing: 0.035em !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    line-break: strict !important;
+  }
+
+  .homecare-page-body .tm-hero-copy .hero-text-line {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .homecare-page-body .tm-hero-copy .text-phrase {
+    display: inline !important;
+  }
+}
+
 @media (max-width: 480px) {
   .homecare-page-body .tm-hero-image {
     width: min(74vw, 300px) !important;
     max-width: calc(100vw - 88px) !important;
     margin-top: 30px !important;
+  }
+}
+
+/* Mobile intentional copy lines across all pages */
+@media (max-width: 767px) {
+  main :where(p, li, dd, summary),
+  footer :where(p, li) {
+    max-width: min(100%, 24em) !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 2.05 !important;
+    letter-spacing: 0.035em !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    line-break: strict !important;
+  }
+
+  main :where(h1, h2, h3, .section-title),
+  footer :where(h2, h3) {
+    max-width: min(100%, 13em) !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.75 !important;
+    letter-spacing: 0.05em !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    line-break: strict !important;
+  }
+
+  .mobile-intended-copy {
+    text-align: center !important;
+  }
+
+  .mobile-intended-line {
+    display: block !important;
+    width: max-content;
+    max-width: 100%;
+    margin-inline: auto;
+    white-space: nowrap;
+  }
+
+  main :where(.about-label, .contact-label, .tm-eyebrow, .tm-page-kicker, .magazine-card__number) {
+    max-width: 100% !important;
+    line-height: 1.6 !important;
+    letter-spacing: 0.12em !important;
+  }
+}
+
+@media (max-width: 390px) {
+  main :where(p, li, dd, summary),
+  footer :where(p, li) {
+    max-width: min(100%, 22em) !important;
+    font-size: min(15px, 3.85vw) !important;
+    letter-spacing: 0.025em !important;
+  }
+
+  main :where(h1, h2, h3, .section-title),
+  footer :where(h2, h3) {
+    max-width: min(100%, 11.5em) !important;
+    letter-spacing: 0.04em !important;
   }
 }
