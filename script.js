@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ".section-title",
       ".faq-page-body .tm-hero-copy h1",
       ".contact-page-body .contact-hero__text h1",
+      ".voice-page-body .contact-hero__text h1",
       ".postpartum-care-page-body .tm-hero-copy h1",
       ".babysitter-page-body .tm-hero-copy h1",
       ".homecare-page-body .tm-hero-copy h1",
