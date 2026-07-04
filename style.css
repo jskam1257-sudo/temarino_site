@@ -12497,3 +12497,174 @@ th {
     line-height: 1 !important;
   }
 }
+
+/* Targeted mobile alignment fixes requested 2026-07-04 */
+.about-card__label,
+.about-card h3,
+.about-card--career .about-timeline h3 {
+  text-align: center !important;
+}
+
+.about-card ul,
+.about-card ol,
+.about-card li,
+.about-note {
+  text-align: left !important;
+}
+
+.about-card--license li {
+  display: block !important;
+  width: 100% !important;
+}
+
+.about-card--career .about-timeline h3 {
+  margin: 28px 0 18px !important;
+}
+
+.footer-brand {
+  display: grid !important;
+  justify-items: center !important;
+}
+
+.footer-brand img {
+  order: 1 !important;
+}
+
+.footer-brand h2 {
+  order: 2 !important;
+}
+
+.footer-notice {
+  display: grid !important;
+  justify-content: center !important;
+  text-align: left !important;
+}
+
+.footer-notice li {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: left !important;
+}
+
+@media (max-width: 767px) {
+  .index-page-body .hero-achievement__small,
+  .index-page-body .hero-achievement__small .text-phrase {
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    text-wrap: nowrap !important;
+  }
+
+  .index-page-body .hero-achievement__small {
+    font-size: clamp(11px, 3vw, 13px) !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .postpartum-care-page-body .postpartum-round-flow__title {
+    text-align: center !important;
+  }
+
+  .postpartum-care-page-body .postpartum-round-flow__copy {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+  }
+
+  .about-greeting__text p {
+    max-width: min(100%, 24em) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: left !important;
+    line-height: 1.8 !important;
+  }
+
+  .about-card__label,
+  .about-card h3,
+  .about-card--career .about-timeline h3 {
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  .about-card ul,
+  .about-card ol {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+  }
+
+  .about-card li,
+  .about-note {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+  }
+
+  .footer-brand {
+    align-content: start !important;
+    min-height: 170px !important;
+    padding-top: 24px !important;
+  }
+
+  .footer-brand img {
+    width: 58px !important;
+    margin: 0 auto 12px !important;
+  }
+
+  .footer-brand h2 {
+    font-size: clamp(30px, 8.8vw, 38px) !important;
+    line-height: 1.35 !important;
+    letter-spacing: 0.12em !important;
+    transform: translateY(0) !important;
+  }
+
+  .footer-notice {
+    width: min(100% - 48px, 340px) !important;
+    max-width: 340px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: stretch !important;
+  }
+
+  .footer-notice li {
+    max-width: 100% !important;
+    padding-left: 1.45em !important;
+    text-align: left !important;
+  }
+
+  .footer-notice li::before {
+    left: 0 !important;
+  }
+
+  .faq-page-body .contact-faq summary,
+  .faq-page-body .contact-faq .faq-item summary {
+    display: grid !important;
+    justify-items: center !important;
+    text-align: left !important;
+  }
+
+  .faq-page-body .contact-faq summary::before {
+    display: grid !important;
+    margin: 0 auto 14px !important;
+  }
+
+  .faq-page-body .contact-faq summary::after {
+    justify-self: center !important;
+  }
+
+  .faq-page-body .contact-faq .faq-item summary {
+    max-width: 100% !important;
+  }
+
+  .faq-page-body .contact-faq .faq-item summary,
+  .faq-page-body .contact-faq .faq-answer p,
+  .faq-page-body .contact-faq .faq-answer li {
+    text-align: left !important;
+  }
+}
