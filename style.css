@@ -13141,3 +13141,18 @@ th {
     -webkit-box-decoration-break: clone !important;
   }
 }
+@media (min-width: 768px) {
+  .postpartum-care-page-body .tm-hero-copy h1,
+  .babysitter-page-body .tm-hero-copy h1,
+  .homecare-page-body .tm-hero-copy h1 {
+    font-size: clamp(34px, 3.4vw, 48px) !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+  }
+
+  .contact-page-body .contact-intro__box h2 {
+    font-size: clamp(30px, 3.4vw, 44px) !important;
+    font-weight: 400 !important;
+    line-height: 1.65 !important;
+  }
+}
