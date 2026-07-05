@@ -13156,3 +13156,77 @@ th {
     line-height: 1.65 !important;
   }
 }
+.heading-35 {
+  display: flex;
+  align-items: center;
+  gap: 0 7px;
+  color: #333333;
+}
+
+.heading-35::before {
+  width: 1.25em;
+  height: 1.25em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.00488 19H22.0049V21H2.00488V19ZM2.00488 5L7.00488 8L12.0049 2L17.0049 8L22.0049 5V17H2.00488V5Z' fill='%23ffb500'%3E%3C/path%3E%3C/svg%3E");
+  content: "";
+}
+.ribbon-title {
+  position: relative;
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  background: #cdeee3; /* 中央のメインの背景色（ミントグリーン） */
+  color: #1a3332; /* 文字色（濃いめの色で視認性を確保） */
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* 左右のリボンの端（折り返しの後ろ側） */
+.ribbon-title::before,
+.ribbon-title::after {
+  content: "";
+  position: absolute;
+  top: 4px; /* 上下に少しずらして立体感を出す */
+  width: 25px;
+  height: 100%;
+  background: #c3e4e2; /* 端の少し明るい（または同等の）背景色 */
+  z-index: -1;
+}
+
+/* 左側のリボンの端（リボンカットの形） */
+.ribbon-title::before {
+  left: -15px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  /* 左側を矢印型にくり抜く記述 */
+  clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 10px 100%, 0% 50%);
+}
+
+/* 右側のリボンの端（リボンカットの形） */
+.ribbon-title::after {
+  right: -15px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  /* 右側を矢印型にくり抜く記述 */
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 10px) 0%,
+    100% 50%,
+    calc(100% - 10px) 100%,
+    0% 100%
+  );
+}
+
+/* 中央リボンの下にある立体感を出す影（三角の折り返しパーツ） */
+.ribbon-title-shadow {
+  /* ※HTML構造を汚さないよう、CSSのみで再現する場合は以下の擬似要素による影の表現や
+     グラデーションを組み合わせますが、もし完璧に再現したい場合は、
+     上記リボンの重なり順（z-index）とborderトリックで調整します */
+}
+
+/* 下側の斜めの影を表現するための補正（画像下部の濃い緑のライン用） */
+.ribbon-title::shadow-line {
+  /* 必要に応じて、中央ボックスの下に少し濃い色のラインを入れるとさらに画像に近づきます */
+}
