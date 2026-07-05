@@ -13221,17 +13221,6 @@ th {
 .text-bold {
   font-weight: bold;
 }
-/* ママたちのメッセージ：文字サイズ・色・太さを通常に戻してマーカー線だけを引く */
-.voice-card .reservation-highlight-block {
-  font-size: inherit; /* 上位の文字サイズをそのまま引き継ぐ */
-  color: inherit; /* 上位の文字色をそのまま引き継ぐ */
-  font-weight: normal; /* 太字を解除して、通常の太さに戻す */
-  background: linear-gradient(
-    transparent 60%,
-    #ffe0e2 60%
-  ); /* ピンクのマーカー線 */
-  display: inline;
-}
 /* --- ヘッダー「訪問専門」組み込み用スタイル --- */
 
 /* ロゴ内の画像と文字グループを縦中央で並べる */
@@ -13282,4 +13271,30 @@ th {
   .logo__name {
     font-size: 28px; /* PCでの元の文字サイズ（まだ小さければ 32px などに大きくしてください） */
   }
+}
+
+/* ママたちのメッセージ：文字サイズ・色・太さを通常に戻してマーカー線だけを引く */
+.voice-card .reservation-highlight-block {
+  font-size: inherit; /* 上位の文字サイズをそのまま引き継ぐ */
+  color: inherit; /* 上位の文字色をそのまま引き継ぐ */
+  font-weight: normal; /* 太字を解除して、通常の太さに戻す */
+  background: linear-gradient(
+    transparent 60%,
+    #ffe0e2 60%
+  ); /* ピンクのマーカー線 */
+  display: inline;
+}
+/* --- ママたちのメッセージ：文字と完全に重なるマーカー線（強制適用） --- */
+.voice-card p .reservation-highlight-block {
+  font-size: inherit !important; /* サイズを通常文章に揃える */
+  color: inherit !important; /* 文字色を通常文章に揃える */
+  font-weight: normal !important; /* 通常の太さに戻す */
+  display: inline !important;
+
+  /* 行間2.3に背景サイズを完全に同期させ、文字の位置までラインを引き上げる設定 */
+  background: linear-gradient(transparent 50%, #ffe0e2 50%) !important;
+  background-size: 100% 2.3em !important;
+
+  /* 【修正】数値を 0.45em から 1.1em に変更し、線を文字の下側へ移動 */
+  background-position: 0 1.1em !important;
 }
