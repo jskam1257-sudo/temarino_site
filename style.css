@@ -13218,3 +13218,68 @@ th {
     0% 100%
   );
 }
+.text-bold {
+  font-weight: bold;
+}
+/* ママたちのメッセージ：文字サイズ・色・太さを通常に戻してマーカー線だけを引く */
+.voice-card .reservation-highlight-block {
+  font-size: inherit; /* 上位の文字サイズをそのまま引き継ぐ */
+  color: inherit; /* 上位の文字色をそのまま引き継ぐ */
+  font-weight: normal; /* 太字を解除して、通常の太さに戻す */
+  background: linear-gradient(
+    transparent 60%,
+    #ffe0e2 60%
+  ); /* ピンクのマーカー線 */
+  display: inline;
+}
+/* --- ヘッダー「訪問専門」組み込み用スタイル --- */
+
+/* ロゴ内の画像と文字グループを縦中央で並べる */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* ロゴ画像と文字の間隔 */
+  text-decoration: none;
+}
+
+/* タイトルとサブタイトルを縦並び（左揃え）にする */
+.logo__title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+/* 「訪問専門」の文字デザイン */
+.logo__sub-name {
+  font-size: 11px; /* スマホ用の小さいサイズ */
+  color: #d66f75; /* タイトルと同じピンク赤 */
+  font-weight: bold;
+  white-space: nowrap; /* 途中で絶対に改行させない */
+  margin-bottom: 1px; /* メインタイトルとのすき間 */
+
+  /* 【修正】左側の余白を少し減らし、位置を左側にスライドさせました */
+  padding-left: 0.5em;
+}
+
+/* 「てまりの助産院」の文字調整（サイズを直接数値で固定指定して元に戻しました） */
+.logo__name {
+  font-size: 20px; /* ★スマホでの元の文字サイズ（まだ小さければ数値を大きくしてください） */
+  font-weight: bold;
+  white-space: nowrap;
+  display: block;
+}
+
+/* タブレット・PC用のレスポンシブ対応 */
+@media (min-width: 768px) {
+  /* PC版で「訪問専門」を小さくさせないよう、サイズを元の大きさに固定 */
+  .logo__sub-name {
+    font-size: 14px; /* PC版での訪問専門のサイズ */
+    padding-left: 0.5em; /* PC版の位置調整 */
+  }
+
+  /* ★PC版でのタイトルサイズを元の大きなサイズへ強制固定指定 */
+  .logo__name {
+    font-size: 28px; /* PCでの元の文字サイズ（まだ小さければ 32px などに大きくしてください） */
+  }
+}
