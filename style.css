@@ -13302,66 +13302,47 @@ th {
 .header {
   background: var(--cream) !important; /* フッターの背景と同じ変数を指定 */
 }
-/* --- 実績エリア（丸い背景デザインの統合設定） --- */
 
-/* 2つのブロックを囲む共通設定 */
-.hero-achievements {
-  display: flex;
-  flex-direction: column; /* スマホでは縦並び */
-  align-items: center;
-  gap: 40px;
-}
+/* --- 既存のレイアウトを壊さず、右側にだけ別の丸い背景を追加する設定 --- */
 
-@media (min-width: 768px) {
-  .hero-achievements {
-    flex-direction: row; /* PC・タブレットでは横並び */
-    justify-content: center;
-    gap: 60px;
-  }
-}
-
-/* 各実績ブロックの土台（背景を絶対配置するための基準） */
+/* 2つのブロックの共通の土台（文字を浮き上がらせる設定） */
 .hero-achievement {
   position: relative;
-  width: 100%;
-  max-width: 340px;
-  min-height: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 2;
+  display: inline-block; /* 既存の並び方を邪魔しない設定 */
   text-align: center;
 }
 
-/* 前面に来るアイコンやテキストの階層を上げる */
-.hero-achievement .laurel-frame {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  padding: 20px;
-}
-
-/* 背景に配置する丸の共通設定 */
-.hero-achievement__bg {
+/* 2つ目の「3児の母〜」のブロックだけに、擬似要素（::before）を使って背景を直接差し込む */
+.hero-achievement:nth-child(2)::before {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none; /* テキスト選択の邪魔をしない設定 */
-}
 
-/* 【左側】元の少し横長につぶれたピンクの丸 */
-.hero-achievement__bg--left {
-  background-color: #fcece9; /* 薄いピンク */
-  border-radius: 42% 58% 51% 49% / 45% 45% 55% 55%;
-}
+  /* 文字の後ろの中心に配置する */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-/* 【右側】左とは異なる形・異なる同系色の丸 */
-.hero-achievement__bg--right {
-  /* 左側の薄ピンクより、少し温かみのあるアプリコットベージュを採用 */
+  /* 丸い背景のサイズ（文字の周りを覆う大きさ。お好みで微調整してください） */
+  width: 180px;
+  height: 180px;
+
+  /* テキストの文字の後ろ（iタグやpタグの裏）に入り込ませる */
+  z-index: -1;
+
+  /* 左側の薄ピンク（#fcece9）とは異なる、温かみのある淡いアプリコットベージュ */
   background-color: #fbeee4;
 
-  /* 左の数値（42%...）とは比率を大きく変え、少し縦に膨らんだ別のニュアンスの丸を表現 */
+  /* 左側（42%...）とは完全に異なる比率で、手書き風の非対称な丸を表現 */
   border-radius: 54% 46% 42% 58% / 57% 43% 57% 43%;
+
+  pointer-events: none;
+}
+
+/* スマホとPCで背景の丸の大きさを変えたい場合の調整 */
+@media (min-width: 768px) {
+  .hero-achievement:nth-child(2)::before {
+    width: 220px; /* PC版での丸の横幅 */
+    height: 220px; /* PC版での丸の縦幅 */
+  }
 }
