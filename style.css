@@ -13298,3 +13298,21 @@ th {
   /* 【修正】数値を 0.45em から 1.1em に変更し、線を文字の下側へ移動 */
   background-position: 0 1.1em !important;
 }
+/* --- ヘッダーの背景色をフッターと共通の色にする設定 --- */
+.header {
+  background: var(--cream) !important; /* フッターの背景と同じ変数を指定 */
+}
+/* 右側の「3児の母〜」の背景に、単純に丸を配置する */
+.hero-achievements .hero-achievement:nth-child(2) {
+  /* 左側の薄ピンク（#fcece9）とは異なる、温かみのある淡いベージュ */
+  background-color: #fbeee4 !important;
+
+  /* 左の丸とは違う比率の、手書き風のひずんだ丸 */
+  border-radius: 54% 46% 42% 58% / 57% 43% 57% 43% !important;
+
+  /* 文字が丸からはみ出さないようにするための余白（お好みで調整してください） */
+  padding: 30px !important;
+
+  /* 丸い形を綺麗に保つための設定 */
+  display: inline-block !important;
+}
