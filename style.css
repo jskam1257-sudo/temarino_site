@@ -11644,8 +11644,8 @@ a[href*="instagram.com"].info-btn--outline:hover {
       0 0 40px 12px rgba(255, 224, 228, 0.32) !important;
   }
 }
-
 /* Service menu hero label center fix 2026-07-04 */
+
 .postpartum-care-page-body .tm-hero-copy .tm-eyebrow,
 .babysitter-page-body .tm-hero-copy .tm-eyebrow,
 .homecare-page-body .tm-hero-copy .tm-eyebrow {
@@ -11656,7 +11656,6 @@ a[href*="instagram.com"].info-btn--outline:hover {
   margin-right: auto !important;
   text-align: center !important;
 }
-
 @media (max-width: 767px) {
   .postpartum-care-page-body .tm-hero-copy .tm-eyebrow,
   .babysitter-page-body .tm-hero-copy .tm-eyebrow,
@@ -11665,8 +11664,8 @@ a[href*="instagram.com"].info-btn--outline:hover {
     transform: translateX(0) !important;
   }
 }
-
 /* Real-device responsive alignment fixes 2026-07-04 */
+
 .postpartum-care-page-body .tm-nav-links,
 .babysitter-page-body .tm-nav-links,
 .homecare-page-body .tm-nav-links {
@@ -11691,7 +11690,6 @@ a[href*="instagram.com"].info-btn--outline:hover {
   white-space: nowrap !important;
   background-clip: padding-box !important;
 }
-
 .faq-page-body .faq-group h3 {
   position: relative !important;
   display: inline-block !important;
@@ -11722,7 +11720,6 @@ a[href*="instagram.com"].info-btn--outline:hover {
   height: 0.2em !important;
   background: rgba(232, 141, 131, 0.58) !important;
 }
-
 .contact-page-body .contact-guide .section-title,
 .contact-page-body .contact-hero__text h1,
 .reservation-hero__text h1,
@@ -11740,7 +11737,6 @@ a[href*="instagram.com"].info-btn--outline:hover {
   overflow-wrap: anywhere !important;
   text-wrap: balance;
 }
-
 .index-page-body .hero-achievements {
   justify-items: center !important;
   align-items: stretch !important;
@@ -11785,7 +11781,6 @@ a[href*="instagram.com"].info-btn--outline:hover {
   color: #e88d83 !important;
   font-weight: 700 !important;
 }
-
 @media (max-width: 767px) {
   .postpartum-care-page-body .tm-nav-links,
   .babysitter-page-body .tm-nav-links,
@@ -11806,14 +11801,12 @@ a[href*="instagram.com"].info-btn--outline:hover {
     font-size: clamp(11px, 3.1vw, 13px) !important;
     letter-spacing: 0.03em !important;
   }
-
   .faq-page-body .faq-group {
     text-align: left !important;
   }
   .faq-page-body .faq-group h3 {
     font-size: clamp(18px, 4.8vw, 22px) !important;
   }
-
   .contact-page-body .contact-guide .section-title,
   .contact-page-body .contact-hero__text h1,
   .reservation-hero__text h1,
@@ -11823,7 +11816,6 @@ a[href*="instagram.com"].info-btn--outline:hover {
     line-height: 1.75 !important;
     letter-spacing: 0.04em !important;
   }
-
   .index-page-body .hero-achievements {
     width: min(100% - 28px, 380px) !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -11850,8 +11842,8 @@ a[href*="instagram.com"].info-btn--outline:hover {
     line-height: 1.75 !important;
   }
 }
-
 /* Narrow mobile button containment 2026-07-04 */
+
 @media (max-width: 360px) {
   .info-btn,
   .postnatal-flow__line,
@@ -11866,8 +11858,8 @@ a[href*="instagram.com"].info-btn--outline:hover {
     text-align: center !important;
   }
 }
-
 /* Scroll-in animation for flower hero titles 2026-07-04 */
+
 .faq-page-body .tm-hero-copy h1,
 .contact-page-body .contact-hero__text h1,
 .postpartum-care-page-body .tm-hero-copy h1,
@@ -11882,7 +11874,6 @@ a[href*="instagram.com"].info-btn--outline:hover {
     filter 1.1s ease;
   will-change: opacity, transform, filter;
 }
-
 .faq-page-body .tm-hero-copy h1.is-show,
 .contact-page-body .contact-hero__text h1.is-show,
 .postpartum-care-page-body .tm-hero-copy h1.is-show,
@@ -11890,7 +11881,6 @@ a[href*="instagram.com"].info-btn--outline:hover {
 .homecare-page-body .tm-hero-copy h1.is-show {
   animation: sectionTitleFadeUp 1.2s ease forwards;
 }
-
 @media (prefers-reduced-motion: reduce) {
   .faq-page-body .tm-hero-copy h1,
   .contact-page-body .contact-hero__text h1,
@@ -11904,8 +11894,8 @@ a[href*="instagram.com"].info-btn--outline:hover {
     animation: none;
   }
 }
-
 /* Real phone typography and FAQ marker refinements 2026-07-04 */
+
 .faq-page-body .tm-hero-copy .tm-eyebrow {
   display: block !important;
   width: 100% !important;
@@ -11914,7 +11904,6 @@ a[href*="instagram.com"].info-btn--outline:hover {
   margin-right: auto !important;
   text-align: center !important;
 }
-
 .faq-page-body .faq-group h3::before {
   left: 0 !important;
   right: 0 !important;
@@ -11924,20 +11913,18 @@ a[href*="instagram.com"].info-btn--outline:hover {
   background: rgba(232, 141, 131, 0.32) !important;
   transform: none !important;
 }
-
 .faq-page-body .faq-group h3::after {
   content: none !important;
   display: none !important;
 }
-
 /* Footer flower: keep only the image elements, not duplicate pseudo backgrounds */
+
 .temari-flower-footer::before,
 .temari-flower-footer::after {
   content: none !important;
   display: none !important;
   background: none !important;
 }
-
 @media (max-width: 600px) {
   .temari-flower-footer::before,
   .temari-flower-footer::after {
@@ -11949,12 +11936,12 @@ a[href*="instagram.com"].info-btn--outline:hover {
 /* ===============================
    スマホの不自然な日本語改行対策
 ================================ */
+
 body {
   word-break: normal;
   overflow-wrap: break-word;
   line-break: strict;
 }
-
 h1,
 h2,
 h3,
@@ -11965,7 +11952,6 @@ h3,
   overflow-wrap: normal;
   line-break: strict;
 }
-
 p,
 li,
 dd,
@@ -11981,78 +11967,65 @@ th {
     letter-spacing: 0.04em;
     line-height: 1.7;
   }
-
   .midwife-service-guide {
     padding-inline: 18px;
   }
 }
-
 /* Responsive stability fixes 2026-07-04 */
+
 .intro-copy {
   font-family: "Kiwi Maru", var(--serif), serif !important;
 }
-
 @media (max-width: 767px) {
   .header__inner {
     width: min(100% - 28px, 720px) !important;
     height: 76px !important;
     justify-content: space-between !important;
   }
-
   .logo {
     min-width: 0 !important;
     gap: 8px !important;
     margin-left: 0 !important;
   }
-
   .logo img {
     width: clamp(56px, 17vw, 72px) !important;
     max-height: 56px !important;
   }
-
   .logo__name {
     font-size: clamp(20px, 7.2vw, 30px) !important;
     letter-spacing: 0.08em !important;
     white-space: nowrap !important;
   }
-
   .menu-btn {
     display: block !important;
     flex: 0 0 42px !important;
   }
-
   .nav {
     top: 76px !important;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1099px) {
   .header__inner {
     width: min(100% - 40px, 980px) !important;
     height: 82px !important;
     justify-content: space-between !important;
   }
-
   .logo {
     gap: 10px !important;
     margin-left: 0 !important;
   }
-
   .logo img {
     width: clamp(72px, 9vw, 92px) !important;
     max-height: 64px !important;
   }
-
   .logo__name {
     font-size: clamp(24px, 3.8vw, 34px) !important;
     letter-spacing: 0.08em !important;
   }
-
   .menu-btn {
     display: block !important;
     flex: 0 0 42px !important;
   }
-
   .nav {
     position: fixed !important;
     top: 82px !important;
@@ -12067,62 +12040,50 @@ th {
     background: rgba(255, 255, 255, 0.98) !important;
     box-shadow: var(--shadow) !important;
   }
-
   .menu-check:checked ~ .nav {
     display: grid !important;
   }
-
   .nav a {
     justify-content: center !important;
     text-align: center !important;
   }
 }
-
 @media (min-width: 1100px) and (max-width: 1280px) {
   .header__inner {
     width: min(100% - 32px, 1220px) !important;
   }
-
   .logo {
     gap: 10px !important;
     margin-left: 0 !important;
   }
-
   .logo img {
     width: 96px !important;
     max-height: 66px !important;
   }
-
   .logo__name {
     font-size: clamp(24px, 2.2vw, 30px) !important;
     letter-spacing: 0.06em !important;
   }
-
   .nav {
     gap: clamp(12px, 1.5vw, 22px) !important;
   }
-
   .nav a {
     font-size: clamp(13px, 1.1vw, 15px) !important;
     letter-spacing: 0.02em !important;
   }
-
   .nav .btn--small {
     min-height: 44px !important;
     padding-inline: 22px !important;
   }
 }
-
 @media (max-width: 767px) {
   .index-page-body .watercolor-guide {
     overflow: hidden !important;
   }
-
   .index-page-body .watercolor-guide__inner {
     width: min(100%, 390px) !important;
     margin-inline: auto !important;
   }
-
   .index-page-body .watercolor-guide__small,
   .index-page-body .watercolor-guide .section-title,
   .index-page-body .midwife-service-guide__title {
@@ -12135,65 +12096,54 @@ th {
     line-break: strict !important;
     text-align: center !important;
   }
-
   .index-page-body .watercolor-guide__small {
     font-size: clamp(15px, 4.3vw, 18px) !important;
     line-height: 1.75 !important;
     letter-spacing: 0.08em !important;
   }
-
   .index-page-body .watercolor-guide .section-title {
     font-size: clamp(23px, 6vw, 28px) !important;
     line-height: 1.75 !important;
     letter-spacing: 0.06em !important;
   }
-
   .index-page-body .watercolor-card,
   .index-page-body .midwife-service-guide__item {
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
 }
-
 @media (max-width: 430px) {
   .index-page-body .watercolor-guide__inner,
   .index-page-body .midwife-service-guide__inner {
     width: min(100%, 340px) !important;
   }
-
   .index-page-body .watercolor-guide .section-title {
     max-width: 11.5em !important;
   }
 }
-
 @media (max-width: 600px) {
   .temari-flower-footer__inner {
     padding-top: 96px !important;
   }
-
   .footer-brand {
     display: grid !important;
     justify-items: center !important;
     align-content: center !important;
     min-height: 170px !important;
   }
-
   .footer-brand img {
     width: 58px !important;
     margin: 0 auto 10px !important;
   }
-
   .footer-brand h2 {
     margin: 0 !important;
     text-align: center !important;
   }
 }
-
 @media (min-width: 601px) and (max-width: 1024px) {
   .temari-flower-footer__inner {
     padding-top: 118px !important;
   }
-
   .footer-brand {
     display: grid !important;
     justify-items: center !important;
@@ -12201,11 +12151,9 @@ th {
     min-height: 150px !important;
   }
 }
-
 .homecare-page-body .tm-hero-image {
   display: block !important;
 }
-
 .homecare-page-body .tm-hero-image img {
   display: block !important;
   width: 100% !important;
@@ -12215,27 +12163,22 @@ th {
   opacity: 1 !important;
   visibility: visible !important;
 }
-
 .tm-hero-copy .hero-text-line {
   display: inline;
 }
-
 .line-message-row {
   display: inline;
 }
-
 @media (max-width: 900px) {
   .homecare-page-body .tm-service-hero {
     gap: 36px !important;
   }
-
   .homecare-page-body .tm-hero-image {
     width: min(78vw, 360px) !important;
     max-width: calc(100vw - 72px) !important;
     margin: 36px auto 0 !important;
   }
 }
-
 @media (max-width: 767px) {
   .postpartum-care-page-body .tm-hero-copy p:last-child,
   .babysitter-page-body .tm-hero-copy p:last-child,
@@ -12252,12 +12195,10 @@ th {
     overflow-wrap: normal !important;
     line-break: strict !important;
   }
-
   .homecare-page-body .tm-hero-copy .text-phrase {
     display: inline !important;
   }
 }
-
 @media (max-width: 480px) {
   .homecare-page-body .tm-hero-image {
     width: min(74vw, 300px) !important;
@@ -12265,15 +12206,14 @@ th {
     margin-top: 30px !important;
   }
 }
-
 /* Mobile text safety across all pages */
+
 @media (max-width: 767px) {
   body {
     word-break: normal !important;
     overflow-wrap: break-word !important;
     line-break: strict !important;
   }
-
   main :where(p, li, dd, summary),
   footer :where(p, li) {
     box-sizing: border-box !important;
@@ -12287,7 +12227,6 @@ th {
     overflow-wrap: break-word !important;
     line-break: strict !important;
   }
-
   main :where(h1, h2, h3, .section-title),
   footer :where(h2, h3) {
     box-sizing: border-box !important;
@@ -12302,7 +12241,6 @@ th {
     line-break: strict !important;
     text-wrap: balance;
   }
-
   main
     :where(
       .text-phrase,
@@ -12315,13 +12253,11 @@ th {
     display: inline !important;
     white-space: normal !important;
   }
-
   .homecare-page-body .tm-hero-copy .hero-text-line,
   .homecare-page-body .tm-hero-copy .text-phrase {
     display: inline !important;
     white-space: normal !important;
   }
-
   main
     :where(
       .tm-page,
@@ -12342,7 +12278,6 @@ th {
     min-width: 0 !important;
     overflow-wrap: break-word !important;
   }
-
   main
     :where(
       .tm-page *,
@@ -12362,7 +12297,6 @@ th {
     max-width: 100% !important;
     min-width: 0 !important;
   }
-
   main
     :where(
       .about-label,
@@ -12378,7 +12312,6 @@ th {
     overflow-wrap: break-word !important;
   }
 }
-
 @media (max-width: 390px) {
   main :where(p, li, dd, summary),
   footer :where(p, li) {
@@ -12387,14 +12320,12 @@ th {
     line-height: 2.05 !important;
     letter-spacing: 0.015em !important;
   }
-
   main :where(h1, h2, h3, .section-title),
   footer :where(h2, h3) {
     max-width: min(100%, 14em) !important;
     letter-spacing: 0.025em !important;
   }
 }
-
 @media (max-width: 360px) {
   main :where(p, li, dd, summary),
   footer :where(p, li) {
@@ -12402,15 +12333,14 @@ th {
     letter-spacing: 0.01em !important;
   }
 }
-
 /* Menu page exceptions: list cards and LINE message */
+
 @media (max-width: 767px) {
   .postpartum-care-page-body .tm-list-card,
   .babysitter-page-body .tm-list-card,
   .homecare-page-body .tm-list-card {
     text-align: left !important;
   }
-
   .postpartum-care-page-body .tm-list-card h3,
   .babysitter-page-body .tm-list-card h3,
   .homecare-page-body .tm-list-card h3 {
@@ -12418,7 +12348,6 @@ th {
     text-align: center !important;
     margin-inline: auto !important;
   }
-
   .postpartum-care-page-body .tm-list-card ul,
   .babysitter-page-body .tm-list-card ul,
   .homecare-page-body .tm-list-card ul {
@@ -12428,7 +12357,6 @@ th {
     padding-left: 0 !important;
     text-align: left !important;
   }
-
   .postpartum-care-page-body .tm-list-card li,
   .babysitter-page-body .tm-list-card li,
   .homecare-page-body .tm-list-card li {
@@ -12441,13 +12369,11 @@ th {
     word-break: normal !important;
     overflow-wrap: break-word !important;
   }
-
   .postpartum-care-page-body .tm-list-card li:last-child,
   .babysitter-page-body .tm-list-card li:last-child,
   .homecare-page-body .tm-list-card li:last-child {
     margin-bottom: 0 !important;
   }
-
   .postpartum-care-page-body .dot-frame-message,
   .babysitter-page-body .dot-frame-message,
   .homecare-page-body .dot-frame-message {
@@ -12457,7 +12383,6 @@ th {
     margin-inline: auto !important;
     padding: 34px 24px 28px !important;
   }
-
   .postpartum-care-page-body .dot-frame-message p,
   .babysitter-page-body .dot-frame-message p,
   .homecare-page-body .dot-frame-message p {
@@ -12467,7 +12392,6 @@ th {
     line-height: 2.25 !important;
     letter-spacing: 0.04em !important;
   }
-
   .postpartum-care-page-body .dot-frame-message .reservation-highlight-block,
   .babysitter-page-body .dot-frame-message .reservation-highlight-block,
   .homecare-page-body .dot-frame-message .reservation-highlight-block {
@@ -12477,20 +12401,17 @@ th {
     background: none !important;
     text-align: center !important;
   }
-
   .postpartum-care-page-body .dot-frame-message .line-message-row,
   .babysitter-page-body .dot-frame-message .line-message-row,
   .homecare-page-body .dot-frame-message .line-message-row {
     display: block !important;
     white-space: nowrap !important;
   }
-
   .postpartum-care-page-body .dot-frame-message .sp-only,
   .babysitter-page-body .dot-frame-message .sp-only,
   .homecare-page-body .dot-frame-message .sp-only {
     display: none !important;
   }
-
   .postpartum-care-page-body .dot-frame-message .postnatal-flow__line,
   .babysitter-page-body .dot-frame-message .postnatal-flow__line,
   .homecare-page-body .dot-frame-message .postnatal-flow__line {
@@ -12507,56 +12428,47 @@ th {
     line-height: 1 !important;
   }
 }
-
 /* Targeted mobile alignment fixes requested 2026-07-04 */
+
 .about-card__label,
 .about-card h3,
 .about-card--career .about-timeline h3 {
   text-align: center !important;
 }
-
 .about-card ul,
 .about-card ol,
 .about-card li,
 .about-note {
   text-align: left !important;
 }
-
 .about-card--license li {
   display: block !important;
   width: 100% !important;
 }
-
 .about-card--career .about-timeline h3 {
   margin: 28px 0 18px !important;
 }
-
 .footer-brand {
   display: grid !important;
   justify-items: center !important;
 }
-
 .footer-brand img {
   order: 1 !important;
 }
-
 .footer-brand h2 {
   order: 2 !important;
 }
-
 .footer-notice {
   display: grid !important;
   justify-content: center !important;
   text-align: left !important;
 }
-
 .footer-notice li {
   width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
   text-align: left !important;
 }
-
 @media (max-width: 767px) {
   .index-page-body .hero-achievement__small,
   .index-page-body .hero-achievement__small .text-phrase {
@@ -12565,23 +12477,19 @@ th {
     overflow-wrap: normal !important;
     text-wrap: nowrap !important;
   }
-
   .index-page-body .hero-achievement__small {
     font-size: clamp(11px, 3vw, 13px) !important;
     letter-spacing: 0.02em !important;
   }
-
   .postpartum-care-page-body .postpartum-round-flow__title {
     text-align: center !important;
   }
-
   .postpartum-care-page-body .postpartum-round-flow__copy {
     max-width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
     text-align: left !important;
   }
-
   .about-greeting__text p {
     max-width: min(100%, 24em) !important;
     margin-left: auto !important;
@@ -12589,7 +12497,6 @@ th {
     text-align: left !important;
     line-height: 1.8 !important;
   }
-
   .about-card__label,
   .about-card h3,
   .about-card--career .about-timeline h3 {
@@ -12598,7 +12505,6 @@ th {
     margin-right: auto !important;
     text-align: center !important;
   }
-
   .about-card ul,
   .about-card ol {
     width: 100% !important;
@@ -12607,7 +12513,6 @@ th {
     margin-right: 0 !important;
     text-align: left !important;
   }
-
   .about-card li,
   .about-note {
     max-width: 100% !important;
@@ -12615,25 +12520,21 @@ th {
     margin-right: 0 !important;
     text-align: left !important;
   }
-
   .footer-brand {
     align-content: start !important;
     min-height: 170px !important;
     padding-top: 24px !important;
   }
-
   .footer-brand img {
     width: 58px !important;
     margin: 0 auto 12px !important;
   }
-
   .footer-brand h2 {
     font-size: clamp(30px, 8.8vw, 38px) !important;
     line-height: 1.35 !important;
     letter-spacing: 0.12em !important;
     transform: translateY(0) !important;
   }
-
   .footer-notice {
     width: min(100% - 48px, 340px) !important;
     max-width: 340px !important;
@@ -12641,45 +12542,38 @@ th {
     margin-right: auto !important;
     justify-content: stretch !important;
   }
-
   .footer-notice li {
     max-width: 100% !important;
     padding-left: 1.45em !important;
     text-align: left !important;
   }
-
   .footer-notice li::before {
     left: 0 !important;
   }
-
   .faq-page-body .contact-faq summary,
   .faq-page-body .contact-faq .faq-item summary {
     display: grid !important;
     justify-items: center !important;
     text-align: left !important;
   }
-
   .faq-page-body .contact-faq summary::before {
     display: grid !important;
     margin: 0 auto 14px !important;
   }
-
   .faq-page-body .contact-faq summary::after {
     justify-self: center !important;
   }
-
   .faq-page-body .contact-faq .faq-item summary {
     max-width: 100% !important;
   }
-
   .faq-page-body .contact-faq .faq-item summary,
   .faq-page-body .contact-faq .faq-answer p,
   .faq-page-body .contact-faq .faq-answer li {
     text-align: left !important;
   }
 }
-
 /* Smartphone text flow refinements requested 2026-07-04 */
+
 @media (max-width: 767px) {
   .postpartum-care-page-body .postpartum-round-flow__line-note,
   .postpartum-care-page-body .postpartum-round-flow__line-note p,
@@ -12691,7 +12585,6 @@ th {
   .babysitter-page-body .first-guide__intro span {
     text-align: left !important;
   }
-
   .postpartum-care-page-body .postpartum-round-flow__line-note p,
   .postpartum-care-page-body .postpartum-round-flow__payment,
   .babysitter-page-body .first-guide__intro p {
@@ -12699,12 +12592,10 @@ th {
     margin-left: auto !important;
     margin-right: auto !important;
   }
-
   .index-page-body .contact-intro__box .reservation-highlight-block,
   .contact-page-body .contact-intro__box .reservation-highlight-block {
     display: inline-block !important;
   }
-
   .postpartum-care-page-body .dot-frame-message .sp-only,
   .babysitter-page-body .dot-frame-message .sp-only,
   .homecare-page-body .dot-frame-message .sp-only,
@@ -12723,30 +12614,26 @@ th {
   .babysitter-page-body .guide-flow .sp-only {
     display: block !important;
   }
-
   .homecare-page-body .tm-hero-copy .hero-text-line {
     display: inline !important;
   }
-
   .about-page-body .about-cta__box p,
   .about-page-body .about-family__text p,
   .homecare-page-body .tm-hero-copy p:last-child,
   .faq-page-body .tm-hero-copy p:last-child {
     text-align: center !important;
   }
-
   .babysitter-page-body .guide-notes ul,
   .babysitter-page-body .guide-notes li {
     text-align: left !important;
   }
 }
-
 /* Smartphone header and visual refinements requested 2026-07-04 */
+
 @media (max-width: 767px) {
   .header__inner {
     justify-content: space-between !important;
   }
-
   .logo {
     position: static !important;
     left: auto !important;
@@ -12759,74 +12646,63 @@ th {
     margin-left: 0 !important;
     min-width: 0 !important;
   }
-
   .logo img {
     width: 54px !important;
     max-height: 52px !important;
   }
-
   .logo__name {
     position: static !important;
     transform: none !important;
     font-size: clamp(22px, 6.4vw, 28px) !important;
     letter-spacing: 0.06em !important;
   }
-
   .contact-page-body .contact-hero__image img {
     object-position: 50% 50% !important;
   }
-
   .index-page-body .temari-feature__text p .sp-only,
   .index-page-body .temari-feature__head .sp-only {
     display: block !important;
   }
 }
-
 /* Smartphone text and menu-card refinements requested 2026-07-04 */
+
 @media (max-width: 767px) {
   .index-page-body .temari-feature__head .section-title span {
     display: inline !important;
   }
-
   .index-page-body .temari-feature__head .section-title {
     white-space: nowrap !important;
   }
-
   .index-page-body .watercolor-guide__point .sp-only,
   .index-page-body .magazine-menu__lead .sp-only,
   .index-page-body .about-message__box .sp-only,
   .index-page-body .info-note .sp-only {
     display: block !important;
   }
-
   .index-page-body .magazine-menu__grid {
     align-items: start !important;
   }
-
   .index-page-body .magazine-card,
   .index-page-body .magazine-card__link,
   .index-page-body .magazine-card__body,
   .index-page-body .magazine-card__body * {
     text-align: left !important;
   }
-
   .index-page-body .magazine-card {
     justify-self: start !important;
     width: 100% !important;
   }
-
   .index-page-body .magazine-card__body {
     margin-left: 0 !important;
     margin-right: auto !important;
   }
-
   .index-page-body #kawasaki-postpartum-care .magazine-card__image img,
   .index-page-body #home-visit-care .magazine-card__image img {
     object-position: 50% 50% !important;
   }
 }
-
 /* Smartphone refinements requested 2026-07-04: bullets, header, service flows */
+
 @media (max-width: 767px) {
   .index-page-body .watercolor-guide__point ul {
     width: min(100%, 300px) !important;
@@ -12834,7 +12710,6 @@ th {
     padding: 0 !important;
     list-style: none !important;
   }
-
   .index-page-body .watercolor-guide__point li {
     display: flex !important;
     align-items: flex-start !important;
@@ -12842,14 +12717,12 @@ th {
     gap: 0.45em !important;
     text-align: left !important;
   }
-
   .index-page-body .watercolor-guide__point li::before {
     content: "•" !important;
     flex: 0 0 auto !important;
     color: var(--tm-ink) !important;
     line-height: inherit !important;
   }
-
   .index-page-body .contact-intro__box .reservation-highlight-block {
     display: inline !important;
     padding: 0 0.25em 2px !important;
@@ -12860,7 +12733,6 @@ th {
     box-decoration-break: clone !important;
     -webkit-box-decoration-break: clone !important;
   }
-
   .postpartum-care-page-body .header__inner,
   .babysitter-page-body .header__inner,
   .homecare-page-body .header__inner {
@@ -12869,7 +12741,6 @@ th {
     padding: 0 12px !important;
     justify-content: center !important;
   }
-
   .postpartum-care-page-body .logo,
   .babysitter-page-body .logo,
   .homecare-page-body .logo {
@@ -12880,7 +12751,6 @@ th {
     margin: 0 !important;
     padding: 0 58px !important;
   }
-
   .postpartum-care-page-body .logo img,
   .babysitter-page-body .logo img,
   .homecare-page-body .logo img {
@@ -12891,7 +12761,6 @@ th {
     max-height: 54px !important;
     transform: translateY(-50%) !important;
   }
-
   .postpartum-care-page-body .logo__name,
   .babysitter-page-body .logo__name,
   .homecare-page-body .logo__name {
@@ -12901,7 +12770,6 @@ th {
     font-size: clamp(21px, 6.2vw, 27px) !important;
     letter-spacing: 0.05em !important;
   }
-
   .postpartum-care-page-body .menu-btn,
   .babysitter-page-body .menu-btn,
   .homecare-page-body .menu-btn {
@@ -12910,13 +12778,11 @@ th {
     top: 50% !important;
     transform: translateY(-50%) !important;
   }
-
   .postpartum-care-page-body .tm-logo small,
   .babysitter-page-body .tm-logo small,
   .homecare-page-body .tm-logo small {
     display: none !important;
   }
-
   .postpartum-care-page-body .tm-timeline .sp-only,
   .postpartum-care-page-body .tm-note .sp-only,
   .babysitter-page-body .tm-timeline .sp-only,
@@ -12925,8 +12791,8 @@ th {
     display: block !important;
   }
 }
-
 /* Final smartphone unification requested 2026-07-04 */
+
 @media (max-width: 767px) {
   .header__inner {
     position: relative !important;
@@ -12935,7 +12801,6 @@ th {
     padding: 0 14px !important;
     justify-content: center !important;
   }
-
   .logo {
     position: static !important;
     display: flex !important;
@@ -12945,7 +12810,6 @@ th {
     padding: 0 58px !important;
     transform: none !important;
   }
-
   .logo img {
     position: absolute !important;
     left: 14px !important;
@@ -12955,7 +12819,6 @@ th {
     transform: translateY(-50%) !important;
     object-fit: contain !important;
   }
-
   .logo__name {
     position: static !important;
     transform: none !important;
@@ -12966,14 +12829,12 @@ th {
     letter-spacing: 0.05em !important;
     white-space: nowrap !important;
   }
-
   .menu-btn {
     position: absolute !important;
     right: 14px !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
   }
-
   .contact-page-body .contact-intro__box .reservation-highlight-block {
     display: inline !important;
     padding: 0 0.25em 2px !important;
@@ -12984,18 +12845,15 @@ th {
     box-decoration-break: clone !important;
     -webkit-box-decoration-break: clone !important;
   }
-
   .contact-page-body .contact-guide__lead .sp-only,
   .contact-page-body .contact-guide-card .sp-only {
     display: block !important;
   }
-
   .postpartum-care-page-body .tm-timeline,
   .babysitter-page-body .tm-timeline,
   .homecare-page-body .tm-timeline {
     justify-items: center !important;
   }
-
   .postpartum-care-page-body .tm-timeline li,
   .babysitter-page-body .tm-timeline li,
   .homecare-page-body .tm-timeline li {
@@ -13004,7 +12862,6 @@ th {
     min-height: 0 !important;
     justify-self: center !important;
   }
-
   .postpartum-care-page-body .tm-timeline .sp-only,
   .postpartum-care-page-body .tm-note .sp-only,
   .babysitter-page-body .tm-timeline .sp-only,
@@ -13012,69 +12869,58 @@ th {
   .homecare-page-body .tm-note .sp-only {
     display: block !important;
   }
-
   .footer-brand {
     transform: translateY(-64px) !important;
     margin-bottom: -64px !important;
   }
-
   .footer-brand img {
     width: 58px !important;
     margin: 0 auto 12px !important;
   }
-
   .footer-brand h2 {
     margin: 0 auto !important;
     font-size: clamp(30px, 8.8vw, 38px) !important;
     line-height: 1.32 !important;
     text-align: center !important;
   }
-
   .privacy-page-body .privacy-card p,
   .privacy-page-body .privacy-card li,
   .privacy-page-body .privacy-contact,
   .privacy-page-body .privacy-date {
     text-align: left !important;
   }
-
   .privacy-page-body .privacy-card ul {
     margin-left: 0 !important;
     padding-left: 0 !important;
     list-style: none !important;
   }
-
   .privacy-page-body .privacy-card ul li {
     position: relative !important;
     padding-left: 1em !important;
   }
-
   .privacy-page-body .privacy-card ul li::before {
     content: "・" !important;
     position: absolute !important;
     left: 0 !important;
   }
 }
-
 /* Smartphone refinements requested 2026-07-05 */
+
 @media (max-width: 767px) {
   .voice-page-body .voice-card p {
     text-align: left !important;
     font-weight: 400 !important;
   }
-
   .index-page-body .temari-feature__text h3 .sp-only {
     display: block !important;
   }
-
   .voice-page-body .voice-card {
     text-align: left !important;
   }
-
   .voice-page-body .voice-card span {
     display: block !important;
     text-align: center !important;
   }
-
   .privacy-page-body .privacy-card h2 {
     display: grid !important;
     justify-items: center !important;
@@ -13084,7 +12930,6 @@ th {
     margin-right: auto !important;
     text-align: center !important;
   }
-
   .privacy-page-body .privacy-card h2::before,
   .privacy-page-body .privacy-card h2::after {
     position: static !important;
@@ -13095,22 +12940,19 @@ th {
     margin-right: auto !important;
   }
 }
-
 /* Cross-device polish requested 2026-07-05 */
+
 :root {
   --temari-title-pink: #df8f8f;
 }
-
 .logo__name,
 .intro-copy,
 .footer-brand h2 {
   color: var(--temari-title-pink) !important;
 }
-
 .voice-page-body .voice-card p {
   font-weight: 400 !important;
 }
-
 .postpartum-care-page-body .tm-hero-copy h1,
 .babysitter-page-body .tm-hero-copy h1,
 .homecare-page-body .tm-hero-copy h1 {
@@ -13118,7 +12960,6 @@ th {
   font-weight: 400 !important;
   line-height: 1.55 !important;
 }
-
 @media (max-width: 767px) {
   .contact-page-body .contact-intro__box .reservation-highlight-block {
     display: inline-flex !important;
@@ -13128,7 +12969,6 @@ th {
     padding: 0 !important;
     background: none !important;
   }
-
   .contact-page-body .contact-intro__box .line-message-row {
     display: inline !important;
     width: fit-content !important;
@@ -13149,7 +12989,6 @@ th {
     font-weight: 400 !important;
     line-height: 1.6 !important;
   }
-
   .contact-page-body .contact-intro__box h2 {
     font-size: clamp(30px, 3.4vw, 44px) !important;
     font-weight: 400 !important;
@@ -13162,7 +13001,6 @@ th {
   gap: 0 7px;
   color: #333333;
 }
-
 .heading-35::before {
   width: 1.25em;
   height: 1.25em;
@@ -13174,28 +13012,32 @@ th {
   display: inline-block;
   margin: 20px auto;
   padding: 10px 30px;
-  background: #cdeee3; /* 中央のメインの背景色（ミントグリーン） */
-  color: #1a3332; /* 文字色（濃いめの色で視認性を確保） */
+  background: #cdeee3;
+  /* 中央のメインの背景色（ミントグリーン） */
+  color: #1a3332;
+  /* 文字色（濃いめの色で視認性を確保） */
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.05em;
   text-align: center;
   box-sizing: border-box;
 }
-
 /* 左右のリボンの端（折り返しの後ろ側） */
+
 .ribbon-title::before,
 .ribbon-title::after {
   content: "";
   position: absolute;
-  top: 4px; /* 上下に少しずらして立体感を出す */
+  top: 4px;
+  /* 上下に少しずらして立体感を出す */
   width: 25px;
   height: 100%;
-  background: #c3e4e2; /* 端の少し明るい（または同等の）背景色 */
+  background: #c3e4e2;
+  /* 端の少し明るい（または同等の）背景色 */
   z-index: -1;
 }
-
 /* 左側のリボンの端（リボンカットの形） */
+
 .ribbon-title::before {
   left: -15px;
   border-top-left-radius: 2px;
@@ -13203,8 +13045,8 @@ th {
   /* 左側を矢印型にくり抜く記述 */
   clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 10px 100%, 0% 50%);
 }
-
 /* 右側のリボンの端（リボンカットの形） */
+
 .ribbon-title::after {
   right: -15px;
   border-top-right-radius: 2px;
@@ -13224,125 +13066,135 @@ th {
 /* --- ヘッダー「訪問専門」組み込み用スタイル --- */
 
 /* ロゴ内の画像と文字グループを縦中央で並べる */
+
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 8px; /* ロゴ画像と文字の間隔 */
+  gap: 8px;
+  /* ロゴ画像と文字の間隔 */
   text-decoration: none;
 }
-
 /* タイトルとサブタイトルを縦並び（左揃え）にする */
+
 .logo__title-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   line-height: 1.2;
 }
-
 /* 「訪問専門」の文字デザイン */
-.logo__sub-name {
-  font-size: 11px; /* スマホ用の小さいサイズ */
-  color: #d66f75; /* タイトルと同じピンク赤 */
-  font-weight: bold;
-  white-space: nowrap; /* 途中で絶対に改行させない */
-  margin-bottom: 1px; /* メインタイトルとのすき間 */
 
+.logo__sub-name {
+  font-size: 11px;
+  /* スマホ用の小さいサイズ */
+  color: #d66f75;
+  /* タイトルと同じピンク赤 */
+  font-weight: bold;
+  white-space: nowrap;
+  /* 途中で絶対に改行させない */
+  margin-bottom: 1px;
+  /* メインタイトルとのすき間 */
   /* 【修正】左側の余白を少し減らし、位置を左側にスライドさせました */
   padding-left: 0.5em;
 }
-
 /* 「てまりの助産院」の文字調整（サイズを直接数値で固定指定して元に戻しました） */
+
 .logo__name {
-  font-size: 20px; /* ★スマホでの元の文字サイズ（まだ小さければ数値を大きくしてください） */
+  font-size: 20px;
+  /* ★スマホでの元の文字サイズ（まだ小さければ数値を大きくしてください） */
   font-weight: bold;
   white-space: nowrap;
   display: block;
 }
-
 /* タブレット・PC用のレスポンシブ対応 */
+
 @media (min-width: 768px) {
   /* PC版で「訪問専門」を小さくさせないよう、サイズを元の大きさに固定 */
   .logo__sub-name {
-    font-size: 14px; /* PC版での訪問専門のサイズ */
-    padding-left: 0.5em; /* PC版の位置調整 */
+    font-size: 14px;
+    /* PC版での訪問専門のサイズ */
+    padding-left: 0.5em;
+    /* PC版の位置調整 */
   }
-
   /* ★PC版でのタイトルサイズを元の大きなサイズへ強制固定指定 */
   .logo__name {
-    font-size: 28px; /* PCでの元の文字サイズ（まだ小さければ 32px などに大きくしてください） */
+    font-size: 28px;
+    /* PCでの元の文字サイズ（まだ小さければ 32px などに大きくしてください） */
   }
 }
-
 /* ママたちのメッセージ：文字サイズ・色・太さを通常に戻してマーカー線だけを引く */
+
 .voice-card .reservation-highlight-block {
-  font-size: inherit; /* 上位の文字サイズをそのまま引き継ぐ */
-  color: inherit; /* 上位の文字色をそのまま引き継ぐ */
-  font-weight: normal; /* 太字を解除して、通常の太さに戻す */
-  background: linear-gradient(
-    transparent 60%,
-    #ffe0e2 60%
-  ); /* ピンクのマーカー線 */
+  font-size: inherit;
+  /* 上位の文字サイズをそのまま引き継ぐ */
+  color: inherit;
+  /* 上位の文字色をそのまま引き継ぐ */
+  font-weight: normal;
+  /* 太字を解除して、通常の太さに戻す */
+  background: linear-gradient(transparent 60%, #ffe0e2 60%);
+  /* ピンクのマーカー線 */
   display: inline;
 }
 /* --- ママたちのメッセージ：文字と完全に重なるマーカー線（強制適用） --- */
-.voice-card p .reservation-highlight-block {
-  font-size: inherit !important; /* サイズを通常文章に揃える */
-  color: inherit !important; /* 文字色を通常文章に揃える */
-  font-weight: normal !important; /* 通常の太さに戻す */
-  display: inline !important;
 
+.voice-card p .reservation-highlight-block {
+  font-size: inherit !important;
+  /* サイズを通常文章に揃える */
+  color: inherit !important;
+  /* 文字色を通常文章に揃える */
+  font-weight: normal !important;
+  /* 通常の太さに戻す */
+  display: inline !important;
   /* 行間2.3に背景サイズを完全に同期させ、文字の位置までラインを引き上げる設定 */
   background: linear-gradient(transparent 50%, #ffe0e2 50%) !important;
   background-size: 100% 2.3em !important;
-
   /* 【修正】数値を 0.45em から 1.1em に変更し、線を文字の下側へ移動 */
   background-position: 0 1.1em !important;
 }
 /* --- ヘッダーの背景色をフッターと共通の色にする設定 --- */
-.header {
-  background: var(--cream) !important; /* フッターの背景と同じ変数を指定 */
-}
 
+.header {
+  background: var(--cream) !important;
+  /* フッターの背景と同じ変数を指定 */
+}
 /* --- 既存のレイアウトを壊さず、右側にだけ別の丸い背景を追加する設定 --- */
 
 /* 2つのブロックの共通の土台（文字を浮き上がらせる設定） */
+
 .hero-achievement {
   position: relative;
   z-index: 2;
-  display: inline-block; /* 既存の並び方を邪魔しない設定 */
+  display: inline-block;
+  /* 既存の並び方を邪魔しない設定 */
   text-align: center;
 }
-
 /* 2つ目の「3児の母〜」のブロックだけに、擬似要素（::before）を使って背景を直接差し込む */
+
 .hero-achievement:nth-child(2)::before {
   content: "";
   position: absolute;
-
   /* 文字の後ろの中心に配置する */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   /* 丸い背景のサイズ（文字の周りを覆う大きさ。お好みで微調整してください） */
   width: 180px;
   height: 180px;
-
   /* テキストの文字の後ろ（iタグやpタグの裏）に入り込ませる */
   z-index: -1;
-
   /* 左側の薄ピンク（#fcece9）とは異なる、温かみのある淡いアプリコットベージュ */
   background-color: #fbeee4;
-
   /* 左側（42%...）とは完全に異なる比率で、手書き風の非対称な丸を表現 */
   border-radius: 54% 46% 42% 58% / 57% 43% 57% 43%;
-
   pointer-events: none;
 }
-
 /* スマホとPCで背景の丸の大きさを変えたい場合の調整 */
+
 @media (min-width: 768px) {
   .hero-achievement:nth-child(2)::before {
-    width: 220px; /* PC版での丸の横幅 */
-    height: 220px; /* PC版での丸の縦幅 */
+    width: 220px;
+    /* PC版での丸の横幅 */
+    height: 220px;
+    /* PC版での丸の縦幅 */
   }
 }
