@@ -13198,3 +13198,64 @@ th {
     /* PC版での丸の縦幅 */
   }
 }
+/* --- ヒーロー画像がヘッダーに隠れず、円がすべて綺麗に表示されるための調整 --- */
+
+/* ヒーロー画像（メインビジュアル）全体の囲み枠を調整 */
+.hero,
+.index-page-body main > section:first-of-type {
+  /* 画像がヘッダーの裏に潜り込まないよう、上部に余白を空けて下に押し下げます */
+  margin-top: 20px !important;
+
+  /* 画像全体の横幅を少しだけコンパクト（小さく）にします */
+  max-width: 95% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  /* 背景画像の表示サイズを少し縮小し、円が絶対に切れないように固定します */
+  background-size: contain !important;
+  background-position: center top !important;
+}
+
+/* もしヒーロー画像が背景（background-image）ではなく「imgタグ」で配置されている場合の設定 */
+.hero img,
+.main-visual img {
+  max-height: 85vh !important; /* 縦幅を少し小さく制限して、全体を画面に収めます */
+  object-fit: contain !important;
+}
+/* ============================================================
+ *  スマホ版のみ：ヒーローエリア・FVのレイアウト微調整
+ * ============================================================ */
+@media (max-width: 767px) {
+  /* 1. ヒーローエリア全体の上の余白を削り、全体を上に引き上げる */
+  .hero,
+  .index-page-body main > section:first-of-type {
+    padding-top: 10px !important; /* 内側の上の余白を狭くする */
+    margin-top: 0 !important; /* ヘッダーとの隙間をゼロにする */
+  }
+
+  /* 2. グリーンのリボンバーをヘッダーへさらに近づける */
+  /* ※リボンバーに設定されているクラス名（例: .ribbon-bar や .hero__badge など）に合わせて適宜変更してください */
+  .hero .laurel-frame,
+  .hero__title-badge,
+  .index-page-body main > section:first-of-type div:first-child {
+    margin-top: -15px !important; /* マイナスマージンでヘッダー側に引き上げる */
+    margin-bottom: 24px !important; /* リボンとその下の文章の間隔は現状維持（適正値に固定） */
+  }
+
+  /* 3. 「正解よりも・・・育児を」の文字サイズを少し小さくする */
+  /* ※メインタイトルのh2やh1タグ、クラス名に合わせて自動適用、または書き換えてください */
+  .hero h2,
+  .hero__main-copy,
+  .index-page-body main > section:first-of-type h2 {
+    font-size: 22px !important; /* 現状より一回り小さくして収まりを良くする */
+    line-height: 1.5 !important;
+    margin-top: 15px !important; /* 上の文章との間隔を詰めて上に上げる */
+    margin-bottom: 20px !important;
+  }
+
+  /* 4. その下の「心をほどいて〜」の文章ブロックも連動して上に上げる */
+  .hero p,
+  .hero__sub-copy {
+    margin-top: 10px !important; /* 上の文字との間隔を少し詰め、全体を上に引き上げる */
+  }
+}
