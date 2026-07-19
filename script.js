@@ -232,28 +232,9 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", handleFloatingButtons);
   handleFloatingButtons();
 
-  const scrollToTopSlowly = () => {
-    const start = window.scrollY || document.documentElement.scrollTop;
-    const duration = Math.min(1800, Math.max(950, start * 0.55));
-    const startedAt = performance.now();
-
-    const easeOutCubic = (progress) => 1 - Math.pow(1 - progress, 3);
-
-    const tick = (now) => {
-      const progress = Math.min((now - startedAt) / duration, 1);
-      window.scrollTo(0, start * (1 - easeOutCubic(progress)));
-
-      if (progress < 1) {
-        requestAnimationFrame(tick);
-      }
-    };
-
-    requestAnimationFrame(tick);
-  };
-
   pageTopButton.addEventListener("click", (e) => {
     e.preventDefault();
-    scrollToTopSlowly();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
 
